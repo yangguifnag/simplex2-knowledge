@@ -1,0 +1,264 @@
+{
+  "title": "卡片组件（Card）",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Card 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "卡片组件（Card）"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 案例组件范围",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Card/normal",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Tag/Normal",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 案例配置字段",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "component": "Card/normal",
+              "property": "shadow",
+              "configuredValue": "\"always\""
+            },
+            {
+              "component": "Card/normal",
+              "property": "bodyStyle",
+              "configuredValue": "{\"padding\":\"16px\"}"
+            },
+            {
+              "component": "Card/normal",
+              "property": "collapsible",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Card/normal",
+              "property": "expanded",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Card/normal",
+              "property": "collapseTransition",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Card/normal",
+              "property": "collapseDuration",
+              "configuredValue": "220"
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "label",
+              "configuredValue": "\"Card 作为页面容器承载组件案例内容。\""
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "tagType",
+              "configuredValue": "\"info\""
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "effect",
+              "configuredValue": "\"light\""
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "size": "small",
+          "tableLayout": "auto",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件",
+              "prop": "component",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段",
+              "prop": "property",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "案例配置值",
+              "prop": "configuredValue",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 配置代码",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-code",
+      "children": [
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "{\n  \"title\": \"组件案例容器\",\n  \"type\": \"Card\",\n  \"kind\": \"normal\",\n  \"version\": \"1.0.0\",\n  \"shadow\": \"always\",\n  \"bodyStyle\": {\n    \"padding\": \"16px\"\n  },\n  \"collapsible\": true,\n  \"expanded\": true,\n  \"collapseTransition\": true,\n  \"collapseDuration\": 220,\n  \"children\": [\n    {\n      \"type\": \"Tag\",\n      \"kind\": \"Normal\",\n      \"version\": \"1.0.0\",\n      \"label\": \"Card 作为页面容器承载组件案例内容。\",\n      \"tagType\": \"info\",\n      \"effect\": \"light\"\n    }\n  ]\n}",
+          "tagType": "info",
+          "effect": "plain"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 案例展示",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "title": "组件案例容器",
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "shadow": "always",
+          "bodyStyle": {
+            "padding": "16px"
+          },
+          "collapsible": true,
+          "expanded": true,
+          "collapseTransition": true,
+          "collapseDuration": 220,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "Card 作为页面容器承载组件案例内容。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "title": "组件集成展示",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "从菜单选择组件分类进入详情页。每个详情页包含项目定义与源码位置、配置字段、可复制的 Buzz 配置示例，以及迁移自原集成页的实际案例。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 组件分类索引",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Card",
+              "description": "卡片组件（Card）：/buzz/2026092702/component-showcase/card"
+            },
+            {
+              "title": "Layout",
+              "description": "布局组件（Layout）：/buzz/2026092702/component-showcase/layout"
+            },
+            {
+              "title": "Avatar",
+              "description": "头像组件（Avatar）：/buzz/2026092702/component-showcase/avatar"
+            },
+            {
+              "title": "Calendar",
+              "description": "日历组件（Calendar）：/buzz/2026092702/component-showcase/calendar"
+            },
+            {
+              "title": "Tag",
+              "description": "标签组件（Tag）：/buzz/2026092702/component-showcase/tag"
+            },
+            {
+              "title": "Breadcrumb",
+              "description": "面包屑组件（Breadcrumb）：/buzz/2026092702/component-showcase/breadcrumb"
+            },
+            {
+              "title": "Dropdown",
+              "description": "下拉菜单组件（Dropdown）：/buzz/2026092702/component-showcase/dropdown"
+            },
+            {
+              "title": "Timeline",
+              "description": "时间线组件（Timeline）：/buzz/2026092702/component-showcase/timeline"
+            },
+            {
+              "title": "Button",
+              "description": "按钮组件（Button）：/buzz/2026092702/component-showcase/button"
+            },
+            {
+              "title": "Pagination",
+              "description": "分页组件（Pagination）：/buzz/2026092702/component-showcase/pagination"
+            },
+            {
+              "title": "Progress",
+              "description": "进度组件（Progress）：/buzz/2026092702/component-showcase/progress"
+            },
+            {
+              "title": "Field",
+              "description": "表单组件（Field）：/buzz/2026092702/component-showcase/field"
+            },
+            {
+              "title": "Icon",
+              "description": "图标组件（Icon）：/buzz/2026092702/component-showcase/icon"
+            },
+            {
+              "title": "Empty",
+              "description": "空状态组件（Empty）：/buzz/2026092702/component-showcase/empty"
+            },
+            {
+              "title": "Alert",
+              "description": "提示组件（Alert）：/buzz/2026092702/component-showcase/alert"
+            },
+            {
+              "title": "Cell",
+              "description": "单元格组件（Cell）：/buzz/2026092702/component-showcase/cell"
+            },
+            {
+              "title": "Descriptions",
+              "description": "描述列表组件（Descriptions）：/buzz/2026092702/component-showcase/descriptions"
+            },
+            {
+              "title": "Backtop",
+              "description": "返回顶部组件（Backtop）：/buzz/2026092702/component-showcase/backtop"
+            },
+            {
+              "title": "Skeleton",
+              "description": "骨架屏组件（Skeleton）：/buzz/2026092702/component-showcase/skeleton"
+            },
+            {
+              "title": "Carousel",
+              "description": "轮播组件（Carousel）：/buzz/2026092702/component-showcase/carousel"
+            },
+            {
+              "title": "Navigation",
+              "description": "导航组件（Navigation / Menu）：/buzz/2026092702/component-showcase/navigation"
+            },
+            {
+              "title": "Table",
+              "description": "表格组件（Table / Column）：/buzz/2026092702/component-showcase/table"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

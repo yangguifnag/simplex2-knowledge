@@ -1,0 +1,535 @@
+{
+  "title": "Simplex 框架知识库",
+  "type": "Layout",
+  "kind": "Container",
+  "version": "1.0.0",
+  "direction": "vertical",
+  "children": [
+    {
+      "type": "Layout",
+      "kind": "Header",
+      "version": "1.0.0",
+      "height": "68px",
+      "children": [
+        {
+          "type": "Button",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "Simplex 框架知识库",
+          "buttonType": "primary",
+          "text": true,
+          "size": "large"
+        },
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "Element Plus 扩展层",
+          "tagType": "info",
+          "size": "small",
+          "effect": "light"
+        }
+      ]
+    },
+    {
+      "type": "Layout",
+      "kind": "Container",
+      "version": "1.0.0",
+      "direction": "horizontal",
+      "children": [
+        {
+          "type": "Layout",
+          "kind": "Aside",
+          "version": "1.0.0",
+          "width": "252px",
+          "children": [
+            {
+              "type": "Navigation",
+              "kind": "Menu",
+              "version": "1.0.0",
+              "mode": "vertical",
+              "router": true,
+              "defaultOpeneds": [
+                "project",
+                "architecture",
+                "components",
+                "development",
+                "integration",
+                "resources",
+                "component-demo"
+              ],
+              "backgroundColor": "#17263b",
+              "textColor": "#b9c8dc",
+              "activeTextColor": "#ffffff",
+              "uniqueOpened": false,
+              "children": [
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "project",
+                  "label": "项目总览",
+                  "children": [
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "overview",
+                      "label": "项目定位与职责",
+                      "route": "/buzz/2026092702/overview"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "quick-start",
+                      "label": "快速开始",
+                      "route": "/buzz/2026092702/quick-start"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "structure",
+                      "label": "目录结构与技术栈",
+                      "route": "/buzz/2026092702/structure"
+                    }
+                  ]
+                },
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "architecture",
+                  "label": "架构与运行机制",
+                  "children": [
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "rendering",
+                      "label": "页面到组件渲染链路",
+                      "route": "/buzz/2026092702/rendering"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "page-config",
+                      "label": "Buzz 配置与转换",
+                      "route": "/buzz/2026092702/page-config"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "models",
+                      "label": "模型注册、继承与属性",
+                      "route": "/buzz/2026092702/models"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "component-registry",
+                      "label": "组件解析与自动注册",
+                      "route": "/buzz/2026092702/component-registry"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "slots-states",
+                      "label": "子节点、插槽与状态",
+                      "route": "/buzz/2026092702/events-slots"
+                    }
+                  ]
+                },
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "components",
+                  "label": "组件参考",
+                  "children": [
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "component-overview",
+                      "label": "组件分类总览",
+                      "route": "/buzz/2026092702/components"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "field-components",
+                      "label": "Field 表单组件",
+                      "route": "/buzz/2026092702/field-components"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "layout-components",
+                      "label": "Layout 布局组件",
+                      "route": "/buzz/2026092702/layout-components"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "navigation-components",
+                      "label": "Navigation、Menu 与 Dropdown",
+                      "route": "/buzz/2026092702/navigation-components"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "table-components",
+                      "label": "Table、Column 与数据组件",
+                      "route": "/buzz/2026092702/table-components"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "display-components",
+                      "label": "展示组件与 Skeleton",
+                      "route": "/buzz/2026092702/display-components"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "property-index",
+                      "label": "属性、类型与默认值索引",
+                      "route": "/buzz/2026092702/property-index"
+                    }
+                  ]
+                },
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "development",
+                  "label": "开发指南",
+                  "children": [
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "development-workflow",
+                      "label": "新增组件端到端流程",
+                      "route": "/buzz/2026092702/development"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "field-development",
+                      "label": "新增 Field 类型",
+                      "route": "/buzz/2026092702/field-development"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "attribute-development",
+                      "label": "添加属性与默认值",
+                      "route": "/buzz/2026092702/attribute-development"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "adapter-development",
+                      "label": "适配器与插槽实现",
+                      "route": "/buzz/2026092702/adapter-development"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "build-checks",
+                      "label": "构建与完成前检查",
+                      "route": "/buzz/2026092702/build-checks"
+                    }
+                  ]
+                },
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "integration",
+                  "label": "集成与能力边界",
+                  "children": [
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "local-routing",
+                      "label": "Buzz 与 Vue Router",
+                      "route": "/buzz/2026092702/integration"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "host-app",
+                      "label": "接入宿主应用",
+                      "route": "/buzz/2026092702/host-app"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "events-values",
+                      "label": "事件与双向值",
+                      "route": "/buzz/2026092702/events-values"
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "capability-limits",
+                      "label": "当前不支持的配置行为",
+                      "route": "/buzz/2026092702/capability-limits"
+                    }
+                  ]
+                },
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "troubleshooting",
+                  "label": "问题排查",
+                  "route": "/buzz/2026092702/troubleshooting"
+                },
+                {
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "resources",
+                  "label": "示例与资料",
+                  "children": [
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "component-demo",
+                      "label": "组件集成展示",
+                      "children": [
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-0-showcase-card",
+                          "label": "卡片组件（Card）",
+                          "route": "/buzz/2026092702/component-showcase/card"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-1-showcase-layout",
+                          "label": "布局组件（Layout）",
+                          "route": "/buzz/2026092702/component-showcase/layout"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-2-showcase-avatar",
+                          "label": "头像组件（Avatar）",
+                          "route": "/buzz/2026092702/component-showcase/avatar"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-3-showcase-calendar",
+                          "label": "日历组件（Calendar）",
+                          "route": "/buzz/2026092702/component-showcase/calendar"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-4-showcase-tag",
+                          "label": "标签组件（Tag）",
+                          "route": "/buzz/2026092702/component-showcase/tag"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-5-showcase-breadcrumb",
+                          "label": "面包屑组件（Breadcrumb）",
+                          "route": "/buzz/2026092702/component-showcase/breadcrumb"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-6-showcase-dropdown",
+                          "label": "下拉菜单组件（Dropdown）",
+                          "route": "/buzz/2026092702/component-showcase/dropdown"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-7-showcase-timeline",
+                          "label": "时间线组件（Timeline）",
+                          "route": "/buzz/2026092702/component-showcase/timeline"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-8-showcase-button",
+                          "label": "按钮组件（Button）",
+                          "route": "/buzz/2026092702/component-showcase/button"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-9-showcase-pagination",
+                          "label": "分页组件（Pagination）",
+                          "route": "/buzz/2026092702/component-showcase/pagination"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-10-showcase-progress",
+                          "label": "进度组件（Progress）",
+                          "route": "/buzz/2026092702/component-showcase/progress"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-11-showcase-field",
+                          "label": "表单组件（Field）",
+                          "route": "/buzz/2026092702/component-showcase/field"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-12-showcase-icon",
+                          "label": "图标组件（Icon）",
+                          "route": "/buzz/2026092702/component-showcase/icon"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-13-showcase-empty",
+                          "label": "空状态组件（Empty）",
+                          "route": "/buzz/2026092702/component-showcase/empty"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-14-showcase-alert",
+                          "label": "提示组件（Alert）",
+                          "route": "/buzz/2026092702/component-showcase/alert"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-15-showcase-cell",
+                          "label": "单元格组件（Cell）",
+                          "route": "/buzz/2026092702/component-showcase/cell"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-16-showcase-descriptions",
+                          "label": "描述列表组件（Descriptions）",
+                          "route": "/buzz/2026092702/component-showcase/descriptions"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-17-showcase-backtop",
+                          "label": "返回顶部组件（Backtop）",
+                          "route": "/buzz/2026092702/component-showcase/backtop"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-18-showcase-skeleton",
+                          "label": "骨架屏组件（Skeleton）",
+                          "route": "/buzz/2026092702/component-showcase/skeleton"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-19-showcase-carousel",
+                          "label": "轮播组件（Carousel）",
+                          "route": "/buzz/2026092702/component-showcase/carousel"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-20-showcase-navigation",
+                          "label": "导航组件（Navigation / Menu）",
+                          "route": "/buzz/2026092702/component-showcase/navigation"
+                        },
+                        {
+                          "type": "Menu",
+                          "kind": "Node",
+                          "version": "1.0.0",
+                          "key": "component-21-showcase-table",
+                          "label": "表格组件（Table / Column）",
+                          "route": "/buzz/2026092702/component-showcase/table"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "project-documents",
+                      "label": "项目文档索引",
+                      "route": "/buzz/2026092702/resources"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Layout",
+          "kind": "Main",
+          "version": "1.0.0",
+          "routerView": true
+        }
+      ]
+    },
+    {
+      "type": "Backtop",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "target": ".buzz-page .el-main",
+      "visibilityHeight": 200,
+      "right": 32,
+      "bottom": 32
+    }
+  ]
+}

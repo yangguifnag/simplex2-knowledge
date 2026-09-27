@@ -1,0 +1,255 @@
+{
+  "title": "单元格组件（Cell）",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Cell 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "单元格组件（Cell）"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 案例组件范围",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Cell/Normal",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 案例配置字段",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "component": "Cell/Normal",
+              "property": "description",
+              "configuredValue": "\"登录设备与账号保护设置。\" / \"当前不接收新的消息提醒。\""
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "value",
+              "configuredValue": "\"已保护\" / \"已关闭\""
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "icon",
+              "configuredValue": "\"i-ep-lock\" / \"i-ep-bell\""
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "showArrow",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "clickable",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "rightIcon",
+              "configuredValue": "\"i-ep-bell\""
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "disabled",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "align",
+              "configuredValue": "\"top\""
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "size": "small",
+          "tableLayout": "auto",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件",
+              "prop": "component",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段",
+              "prop": "property",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "案例配置值",
+              "prop": "configuredValue",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 配置代码",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-code",
+      "children": [
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "{\n  \"type\": \"Cell\",\n  \"kind\": \"Normal\",\n  \"version\": \"1.0.0\",\n  \"title\": \"账户安全\",\n  \"description\": \"登录设备与账号保护设置。\",\n  \"value\": \"已保护\",\n  \"icon\": \"i-ep-lock\",\n  \"showArrow\": true,\n  \"clickable\": true\n}",
+          "tagType": "info",
+          "effect": "plain"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 案例展示",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Cell",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "title": "账户安全",
+          "description": "登录设备与账号保护设置。",
+          "value": "已保护",
+          "icon": "i-ep-lock",
+          "showArrow": true,
+          "clickable": true
+        },
+        {
+          "type": "Cell",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "title": "系统通知",
+          "description": "当前不接收新的消息提醒。",
+          "value": "已关闭",
+          "icon": "i-ep-bell",
+          "rightIcon": "i-ep-bell",
+          "clickable": true,
+          "disabled": true,
+          "align": "top"
+        }
+      ]
+    }
+  ]
+}

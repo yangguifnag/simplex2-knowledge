@@ -1,0 +1,520 @@
+{
+  "title": "骨架屏组件（Skeleton）",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Skeleton 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "骨架屏组件（Skeleton）"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 案例组件范围",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Skeleton/default",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/Table",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/Menu",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/Image",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/Layout",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/Icon",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/Avatar",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Skeleton/field",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 案例配置字段",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "component": "Skeleton/default",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/default",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/default",
+              "property": "rows",
+              "configuredValue": "4"
+            },
+            {
+              "component": "Skeleton/default",
+              "property": "rowWidth",
+              "configuredValue": "\"80%\""
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "tableRows",
+              "configuredValue": "4"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "columns",
+              "configuredValue": "3"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "showHeader",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "stripe",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "rows",
+              "configuredValue": "5"
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "itemHeight",
+              "configuredValue": "\"40px\""
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "itemGap",
+              "configuredValue": "\"6px\""
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "indent",
+              "configuredValue": "\"20px\""
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "showIcon",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "width",
+              "configuredValue": "\"320px\""
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "height",
+              "configuredValue": "\"180px\""
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "borderRadius",
+              "configuredValue": "\"8px\""
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "direction",
+              "configuredValue": "\"horizontal\""
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "rows",
+              "configuredValue": "2"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "columns",
+              "configuredValue": "3"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "gap",
+              "configuredValue": "\"12px\""
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "itemHeight",
+              "configuredValue": "\"100px\""
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "size",
+              "configuredValue": "\"32px\""
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "shape",
+              "configuredValue": "\"square\""
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "animated",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "load",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "size",
+              "configuredValue": "\"48px\""
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "shape",
+              "configuredValue": "\"circle\""
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "@skeleton",
+              "configuredValue": "{\"animated\":true,\"load\":true,\"rows\":1,\"count\":1,\"rowWidth\":\"60%\",\"throttle\":0}"
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "layout",
+              "configuredValue": "\"vertical\""
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "labelWidth",
+              "configuredValue": "\"80px\""
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "contentWidth",
+              "configuredValue": "\"60%\""
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "size": "small",
+          "tableLayout": "auto",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件",
+              "prop": "component",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段",
+              "prop": "property",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "案例配置值",
+              "prop": "configuredValue",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 配置代码",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-code",
+      "children": [
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "{\n  \"title\": \"骨架屏\",\n  \"type\": \"Skeleton\",\n  \"kind\": \"default\",\n  \"version\": \"1.0.0\",\n  \"animated\": true,\n  \"load\": true,\n  \"rows\": 4,\n  \"rowWidth\": \"80%\"\n}",
+          "tagType": "info",
+          "effect": "plain"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 案例展示",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "title": "骨架屏",
+          "type": "Skeleton",
+          "kind": "default",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "rows": 4,
+          "rowWidth": "80%"
+        },
+        {
+          "title": "表格骨架屏",
+          "type": "Skeleton",
+          "kind": "Table",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "tableRows": 4,
+          "columns": 3,
+          "showHeader": true,
+          "stripe": true
+        },
+        {
+          "title": "菜单骨架屏",
+          "type": "Skeleton",
+          "kind": "Menu",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "rows": 5,
+          "itemHeight": "40px",
+          "itemGap": "6px",
+          "indent": "20px",
+          "showIcon": true
+        },
+        {
+          "title": "图片骨架屏",
+          "type": "Skeleton",
+          "kind": "Image",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "width": "320px",
+          "height": "180px",
+          "borderRadius": "8px"
+        },
+        {
+          "title": "布局骨架屏",
+          "type": "Skeleton",
+          "kind": "Layout",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "direction": "horizontal",
+          "rows": 2,
+          "columns": 3,
+          "gap": "12px",
+          "itemHeight": "100px"
+        },
+        {
+          "title": "图标骨架屏",
+          "type": "Skeleton",
+          "kind": "Icon",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "size": "32px",
+          "shape": "square"
+        },
+        {
+          "title": "头像骨架屏",
+          "type": "Skeleton",
+          "kind": "Avatar",
+          "version": "1.0.0",
+          "animated": true,
+          "load": true,
+          "size": "48px",
+          "shape": "circle"
+        },
+        {
+          "title": "字段骨架屏",
+          "type": "Skeleton",
+          "kind": "field",
+          "version": "1.0.0",
+          "@skeleton": {
+            "animated": true,
+            "load": true,
+            "rows": 1,
+            "count": 1,
+            "rowWidth": "60%",
+            "throttle": 0
+          },
+          "layout": "vertical",
+          "labelWidth": "80px",
+          "contentWidth": "60%"
+        }
+      ]
+    }
+  ]
+}

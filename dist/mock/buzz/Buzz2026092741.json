@@ -1,0 +1,305 @@
+{
+  "title": "导航组件（Navigation / Menu）",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Navigation 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "导航组件（Navigation / Menu）"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 案例组件范围",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Navigation/Menu",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Menu/Node",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 案例配置字段",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "component": "Navigation/Menu",
+              "property": "mode",
+              "configuredValue": "\"vertical\""
+            },
+            {
+              "component": "Navigation/Menu",
+              "property": "defaultActive",
+              "configuredValue": "\"1\""
+            },
+            {
+              "component": "Navigation/Menu",
+              "property": "defaultOpeneds",
+              "configuredValue": "[\"2\"]"
+            },
+            {
+              "component": "Navigation/Menu",
+              "property": "uniqueOpened",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Menu/Node",
+              "property": "key",
+              "configuredValue": "\"1\" / \"2\" / \"2-1\" / \"2-2\" / \"2-2-1\" / \"2-2-2\" / \"3\""
+            },
+            {
+              "component": "Menu/Node",
+              "property": "label",
+              "configuredValue": "\"首页\" / \"内容管理\" / \"文章列表\" / \"内容分类\" / \"分类列表\" / \"新增分类\" / \"系统设置\""
+            },
+            {
+              "component": "Menu/Node",
+              "property": "disabled",
+              "configuredValue": "true"
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "size": "small",
+          "tableLayout": "auto",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件",
+              "prop": "component",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段",
+              "prop": "property",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "案例配置值",
+              "prop": "configuredValue",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 配置代码",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-code",
+      "children": [
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "{\n  \"title\": \"Menu 菜单\",\n  \"type\": \"Navigation\",\n  \"kind\": \"Menu\",\n  \"version\": \"1.0.0\",\n  \"mode\": \"vertical\",\n  \"defaultActive\": \"1\",\n  \"defaultOpeneds\": [\n    \"2\"\n  ],\n  \"uniqueOpened\": true,\n  \"children\": [\n    {\n      \"title\": \"首页\",\n      \"type\": \"Menu\",\n      \"kind\": \"Node\",\n      \"version\": \"1.0.0\",\n      \"key\": \"1\",\n      \"label\": \"首页\"\n    },\n    {\n      \"title\": \"内容管理\",\n      \"type\": \"Menu\",\n      \"kind\": \"Node\",\n      \"version\": \"1.0.0\",\n      \"key\": \"2\",\n      \"label\": \"内容管理\",\n      \"children\": [\n        {\n          \"title\": \"文章列表\",\n          \"type\": \"Menu\",\n          \"kind\": \"Node\",\n          \"version\": \"1.0.0\",\n          \"key\": \"2-1\",\n          \"label\": \"文章列表\"\n        },\n        {\n          \"title\": \"内容分类\",\n          \"type\": \"Menu\",\n          \"kind\": \"Node\",\n          \"version\": \"1.0.0\",\n          \"key\": \"2-2\",\n          \"label\": \"内容分类\",\n          \"children\": [\n            {\n              \"title\": \"分类列表\",\n              \"type\": \"Menu\",\n              \"kind\": \"Node\",\n              \"version\": \"1.0.0\",\n              \"key\": \"2-2-1\",\n              \"label\": \"分类列表\"\n            },\n            {\n              \"title\": \"新增分类\",\n              \"type\": \"Menu\",\n              \"kind\": \"Node\",\n              \"version\": \"1.0.0\",\n              \"key\": \"2-2-2\",\n              \"label\": \"新增分类\",\n              \"disabled\": true\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"系统设置\",\n      \"type\": \"Menu\",\n      \"kind\": \"Node\",\n      \"version\": \"1.0.0\",\n      \"key\": \"3\",\n      \"label\": \"系统设置\"\n    }\n  ]\n}",
+          "tagType": "info",
+          "effect": "plain"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 案例展示",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "title": "Menu 菜单",
+          "type": "Navigation",
+          "kind": "Menu",
+          "version": "1.0.0",
+          "mode": "vertical",
+          "defaultActive": "1",
+          "defaultOpeneds": [
+            "2"
+          ],
+          "uniqueOpened": true,
+          "children": [
+            {
+              "title": "首页",
+              "type": "Menu",
+              "kind": "Node",
+              "version": "1.0.0",
+              "key": "1",
+              "label": "首页"
+            },
+            {
+              "title": "内容管理",
+              "type": "Menu",
+              "kind": "Node",
+              "version": "1.0.0",
+              "key": "2",
+              "label": "内容管理",
+              "children": [
+                {
+                  "title": "文章列表",
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "2-1",
+                  "label": "文章列表"
+                },
+                {
+                  "title": "内容分类",
+                  "type": "Menu",
+                  "kind": "Node",
+                  "version": "1.0.0",
+                  "key": "2-2",
+                  "label": "内容分类",
+                  "children": [
+                    {
+                      "title": "分类列表",
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "2-2-1",
+                      "label": "分类列表"
+                    },
+                    {
+                      "title": "新增分类",
+                      "type": "Menu",
+                      "kind": "Node",
+                      "version": "1.0.0",
+                      "key": "2-2-2",
+                      "label": "新增分类",
+                      "disabled": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "系统设置",
+              "type": "Menu",
+              "kind": "Node",
+              "version": "1.0.0",
+              "key": "3",
+              "label": "系统设置"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
