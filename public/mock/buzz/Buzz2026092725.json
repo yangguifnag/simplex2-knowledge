@@ -334,7 +334,7 @@
               "type": "Tag",
               "kind": "Normal",
               "version": "1.0.0",
-              "label": "@simplex2/framework 是 file:../simplex2-frame；缺少 sibling 工程时构建失败应先核对依赖目录。",
+              "label": "Simplex 运行时包从 npm 安装；构建遇到模块解析错误时，先确认 npm install 完成且依赖版本符合 package-lock.json。",
               "tagType": "info",
               "effect": "light"
             }

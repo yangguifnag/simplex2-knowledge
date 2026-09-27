@@ -382,7 +382,7 @@
               "type": "Tag",
               "kind": "Normal",
               "version": "1.0.0",
-              "label": "package.json 当前以 file:../simplex2-frame 引用 sibling 工程，开发时要保证该目录存在。",
+              "label": "Simplex 运行时通过 package.json 声明的 @simplex2/element-plus-frame 与 @simplex2/framework npm 依赖提供，无需本地 sibling 工程。",
               "tagType": "info",
               "effect": "light"
             }

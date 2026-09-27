@@ -116,7 +116,7 @@
               "type": "Tag",
               "kind": "Normal",
               "version": "1.0.0",
-              "label": "Vue 3、Vite 8、Element Plus、Vue Router 4；基础框架通过 file:../simplex2-frame 使用本地 sibling 工程。",
+              "label": "运行环境：Vue 3.5.43、Vite 8.3.1、Element Plus 2.14.6、Vue Router 4.6.4；Simplex 运行时来自 npm 依赖。项目要求 Node.js ^22.18.0 或 >=24.12.0。",
               "tagType": "info",
               "effect": "light"
             }
@@ -276,7 +276,7 @@
                       "type": "Tag",
                       "kind": "Normal",
                       "version": "1.0.0",
-                      "label": "进入快速开始页面，确认 Node.js、相邻 simplex2-frame 工程、npm install、npm run dev 和 npm run build。",
+                      "label": "进入快速开始页面，确认 Node.js 版本符合 engines、安装 npm 依赖，并运行 npm run dev 和 npm run build。",
                       "tagType": "info",
                       "effect": "light"
                     }

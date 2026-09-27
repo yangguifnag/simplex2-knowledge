@@ -61,7 +61,7 @@
                       "type": "Tag",
                       "kind": "Normal",
                       "version": "1.0.0",
-                      "label": "使用 package.json engines 要求的 Node.js 版本，并安装 npm 依赖。",
+                      "label": "使用 Node.js ^22.18.0 或 >=24.12.0（package.json engines），然后运行 npm install 安装依赖。",
                       "tagType": "info",
                       "effect": "light"
                     }
@@ -89,7 +89,7 @@
                       "type": "Tag",
                       "kind": "Normal",
                       "version": "1.0.0",
-                      "label": "项目通过 file:../simplex2-frame 依赖本地 sibling simplex2-frame；先确认相邻目录和框架源码可用。",
+                      "label": "Simplex 运行时通过 package.json 中的 npm 依赖安装，无需准备相邻的 simplex2-frame 工程。",
                       "tagType": "info",
                       "effect": "light"
                     }

@@ -49,7 +49,7 @@
               "type": "Tag",
               "kind": "Normal",
               "version": "1.0.0",
-              "label": "本项目 package.json 当前使用 file:../simplex2-frame；宿主应按团队发布策略固定 @simplex2/framework 来源和版本。",
+              "label": "本知识库从 npm 安装 @simplex2/element-plus-frame 与 @simplex2/framework；宿主应用按团队发布策略固定依赖来源和版本。",
               "tagType": "info",
               "effect": "light"
             }
