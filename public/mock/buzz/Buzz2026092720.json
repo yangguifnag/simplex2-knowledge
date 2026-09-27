@@ -1,0 +1,591 @@
+{
+  "title": "目录结构与技术栈",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "按职责定位代码：应用集成入口、配置样例、模型契约、Vue 适配器和 Vite 自动接线各自位于不同目录。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "项目总览"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "目录结构与技术栈"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 从仓库根目录开始",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-flow",
+      "children": [
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "01",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "package.json",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "记录 Vue、Element Plus、Vue Router、Vite 和 @simplex2/framework 依赖；脚本包括 dev、build、preview。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "vite.config.js",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "配置 Vue SFC、Element Plus/Vue 组件自动导入、模型目录自动导入和运行时组件 registry 扫描。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "public/ 与 index.html",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "静态资源和 Vite 页面入口；dist/ 是构建产物，不是源码修改入口。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "文档",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "README.md 介绍项目；组件属性说明.md 记录配置契约；AI 开发文档解释代码约定和工作流程。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · src 目录的阅读地图",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "main.js / App.vue",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "创建并挂载 Vue 应用，安装 Router，并加载知识库样式。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "router/ 与 Buzz/",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "本地集成路由、知识库 shell、普通 Buzz 页面和嵌套路由页面入口。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "config/pages/",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "Buzz 页面配置；知识库页面通过 knowledgePage helper 统一转为 Knowledge.Article 数据。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "frame/defined/",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件显式配置属性的类型、默认值、说明和计算属性。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "frame/model/",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "用 Model.factory 组合定义，建立组件族基础模型与具体 kind 模型。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "components/",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "匹配 type/kind/version 的 Vue 适配器，将模型属性连接到 Element Plus。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "renderer/、mixins/、utils/、styles/",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "分别负责递归渲染、共享 Field 逻辑、页面配置转换和知识库样式。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 技术栈与运行条件",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Vue 3",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "页面入口和所有组件适配器均为 Vue 单文件组件；组件文件遵循项目现有 Options API 风格。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Vite 8",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "提供开发服务器、构建及 preview；本项目未定义独立 test 或 lint 脚本。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Element Plus",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "UI 组件实现目标；只有项目模型和适配器明确映射的属性才是项目配置能力。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Simplex 框架",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "package.json 当前以 file:../simplex2-frame 引用 sibling 工程，开发时要保证该目录存在。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Node.js",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "package.json engines 声明 ^22.18.0 或 >=24.12.0；本地安装和构建需满足该版本范围。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "SCSS",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "sass-embedded 编译 src/styles 下知识库样式；knowledge.scss 对知识库布局和卡片做局部定制。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 建议的源码追踪顺序",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-steps",
+      "children": [
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 01",
+              "itemType": "primary",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "从页面样例找节点",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "在 Buzz 配置中找到 type、kind、version 和属性值。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "查看配置契约",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "在 src/frame/defined 中确认属性名、类型、默认值和所属层级。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "确认模型关系",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "在 src/frame/model 中检查工厂注册和基础模型继承。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "核对 Vue 映射",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "在 src/components 中确认适配器实际消费了哪些属性、插槽和值。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 05",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "最后追 renderer",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "只有涉及递归 children、命名插槽、列或状态显示时，再沿 renderer-base 特殊分支追踪。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

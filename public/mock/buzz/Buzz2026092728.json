@@ -1,0 +1,478 @@
+{
+  "title": "当前不支持的配置行为",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "页面配置目前是静态模型数据，不是模板语言或事件 DSL。只把配置声明成属性，不会让 renderer 自动获得执行或业务集成能力。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "集成与能力边界"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "当前不支持的配置行为"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 配置边界提醒",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-alert",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "函数、事件名和未映射的原生属性都需要由模型、适配器或宿主应用建立明确的消费链路。",
+          "alertType": "warning",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light",
+          "title": "普通 JSON 配置不会自动执行"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 不要假设这些配置会自动工作",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "函数回调",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "createPageConfig 将普通值转换为 Prop；函数值不会被转成 Vue listener，不要依赖 onClick 字段执行业务函数。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "任意 Element Plus props",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "适配器只绑定代码中明确读取的字段；未定义或未映射的原生 prop 不会自动透传。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "任意 Vue 事件",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "renderer-base 没有自动透传任意事件监听器；适配器 emits 也不会自动到达宿主页面。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "自动路由注册",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "Menu.Node.route 只作为菜单项路径；必须存在匹配的宿主 Vue Router 路由。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "自动业务请求",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "模型、renderer 和适配器不会凭 loading、data 等配置自动发起业务 API 请求。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 本项目明确提供的能力",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-flow",
+      "children": [
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "01",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "静态节点树",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "Buzz 对象由 children 构造模型树，renderer 递归渲染默认/命名插槽及特定特殊节点。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "显式组件映射",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "defined/model 声明属性契约，Vue 适配器映射已接入的 Element Plus 属性。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "Field 值绑定",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "可编辑 Field 通常通过 v-model 更新 $agent.value，具体值类型依组件实现而定。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "显式包装事件",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "个别适配器声明并 emit 事件；是否可被业务消费须检查父级监听链路。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "05",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "状态组件分支",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "模型状态与 @ 前缀状态子模型配合 renderer 显示 Skeleton 等已接入状态组件；不负责异步请求状态管理。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 需要扩展时的正确路径",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-steps",
+      "children": [
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 01",
+              "itemType": "primary",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "定清协议",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "定义配置类型、默认值、事件名与载荷，并指定最终消费方。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "接通代码",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "按需扩展模型、Vue 适配器或 renderer/宿主接口；不要只增加 Buzz 字段。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "补充示例",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "在页面配置中提供可观察的行为和正常/异常状态。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "验证端到端",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "确认用户操作可抵达模型或宿主消费方，并验证路由、值回写和错误处理。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 05",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "文档同步",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "只记录已实现并验证的行为，保留未支持边界说明。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

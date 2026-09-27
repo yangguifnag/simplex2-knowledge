@@ -1,0 +1,299 @@
+{
+  "basePath": "/buzz/2026092702",
+  "routes": [
+    {
+      "key": "overview",
+      "path": "overview",
+      "title": "项目定位与职责",
+      "buzzNo": "2026092703"
+    },
+    {
+      "key": "structure",
+      "path": "structure",
+      "title": "目录结构与技术栈",
+      "buzzNo": "2026092720"
+    },
+    {
+      "key": "quickStart",
+      "path": "quick-start",
+      "title": "快速开始",
+      "buzzNo": "2026092717"
+    },
+    {
+      "key": "rendering",
+      "path": "rendering",
+      "title": "页面到组件渲染链路",
+      "buzzNo": "2026092704"
+    },
+    {
+      "key": "componentRegistry",
+      "path": "component-registry",
+      "title": "组件解析与自动注册",
+      "buzzNo": "2026092721"
+    },
+    {
+      "key": "models",
+      "path": "models",
+      "title": "模型注册、继承与属性",
+      "buzzNo": "2026092705"
+    },
+    {
+      "key": "components",
+      "path": "components",
+      "title": "组件分类总览",
+      "buzzNo": "2026092706"
+    },
+    {
+      "key": "fieldComponents",
+      "path": "field-components",
+      "title": "Field 表单组件",
+      "buzzNo": "2026092711"
+    },
+    {
+      "key": "layoutComponents",
+      "path": "layout-components",
+      "title": "Layout 布局组件",
+      "buzzNo": "2026092712"
+    },
+    {
+      "key": "navigationComponents",
+      "path": "navigation-components",
+      "title": "Navigation、Menu 与 Dropdown",
+      "buzzNo": "2026092713"
+    },
+    {
+      "key": "tableComponents",
+      "path": "table-components",
+      "title": "Table、Column 与数据组件",
+      "buzzNo": "2026092714"
+    },
+    {
+      "key": "displayComponents",
+      "path": "display-components",
+      "title": "展示组件与 Skeleton",
+      "buzzNo": "2026092715"
+    },
+    {
+      "key": "propertyIndex",
+      "path": "property-index",
+      "title": "属性、类型与默认值索引",
+      "buzzNo": "2026092716"
+    },
+    {
+      "key": "pageConfig",
+      "path": "page-config",
+      "title": "Buzz 配置与转换",
+      "buzzNo": "2026092707"
+    },
+    {
+      "key": "development",
+      "path": "development",
+      "title": "新增组件端到端流程",
+      "buzzNo": "2026092708"
+    },
+    {
+      "key": "fieldDevelopment",
+      "path": "field-development",
+      "title": "新增 Field 类型",
+      "buzzNo": "2026092722"
+    },
+    {
+      "key": "attributeDevelopment",
+      "path": "attribute-development",
+      "title": "添加属性与默认值",
+      "buzzNo": "2026092723"
+    },
+    {
+      "key": "adapterDevelopment",
+      "path": "adapter-development",
+      "title": "适配器与插槽实现",
+      "buzzNo": "2026092724"
+    },
+    {
+      "key": "buildChecks",
+      "path": "build-checks",
+      "title": "构建与完成前检查",
+      "buzzNo": "2026092725"
+    },
+    {
+      "key": "integration",
+      "path": "integration",
+      "title": "Buzz 与 Vue Router",
+      "buzzNo": "2026092709"
+    },
+    {
+      "key": "hostApp",
+      "path": "host-app",
+      "title": "接入宿主应用",
+      "buzzNo": "2026092726"
+    },
+    {
+      "key": "eventsSlots",
+      "path": "events-slots",
+      "title": "子节点、插槽与状态",
+      "buzzNo": "2026092710"
+    },
+    {
+      "key": "eventsValues",
+      "path": "events-values",
+      "title": "事件与双向值",
+      "buzzNo": "2026092727"
+    },
+    {
+      "key": "capabilityLimits",
+      "path": "capability-limits",
+      "title": "当前不支持的配置行为",
+      "buzzNo": "2026092728"
+    },
+    {
+      "key": "troubleshooting",
+      "path": "troubleshooting",
+      "title": "问题排查",
+      "buzzNo": "2026092718"
+    },
+    {
+      "key": "componentShowcase",
+      "path": "component-showcase",
+      "title": "组件集成展示",
+      "buzzNo": "2026092729"
+    },
+    {
+      "key": "componentShowcaseAlert",
+      "path": "component-showcase/alert",
+      "title": "提示组件（Alert）",
+      "buzzNo": "2026092748"
+    },
+    {
+      "key": "componentShowcaseAvatar",
+      "path": "component-showcase/avatar",
+      "title": "头像组件（Avatar）",
+      "buzzNo": "2026092730"
+    },
+    {
+      "key": "componentShowcaseBacktop",
+      "path": "component-showcase/backtop",
+      "title": "返回顶部组件（Backtop）",
+      "buzzNo": "2026092749"
+    },
+    {
+      "key": "componentShowcaseBreadcrumb",
+      "path": "component-showcase/breadcrumb",
+      "title": "面包屑组件（Breadcrumb）",
+      "buzzNo": "2026092731"
+    },
+    {
+      "key": "componentShowcaseButton",
+      "path": "component-showcase/button",
+      "title": "按钮组件（Button）",
+      "buzzNo": "2026092732"
+    },
+    {
+      "key": "componentShowcaseCalendar",
+      "path": "component-showcase/calendar",
+      "title": "日历组件（Calendar）",
+      "buzzNo": "2026092733"
+    },
+    {
+      "key": "componentShowcaseCard",
+      "path": "component-showcase/card",
+      "title": "卡片组件（Card）",
+      "buzzNo": "2026092734"
+    },
+    {
+      "key": "componentShowcaseCarousel",
+      "path": "component-showcase/carousel",
+      "title": "轮播组件（Carousel）",
+      "buzzNo": "2026092735"
+    },
+    {
+      "key": "componentShowcaseCell",
+      "path": "component-showcase/cell",
+      "title": "单元格组件（Cell）",
+      "buzzNo": "2026092750"
+    },
+    {
+      "key": "componentShowcaseDescriptions",
+      "path": "component-showcase/descriptions",
+      "title": "描述列表组件（Descriptions）",
+      "buzzNo": "2026092751"
+    },
+    {
+      "key": "componentShowcaseDropdown",
+      "path": "component-showcase/dropdown",
+      "title": "下拉菜单组件（Dropdown）",
+      "buzzNo": "2026092736"
+    },
+    {
+      "key": "componentShowcaseEmpty",
+      "path": "component-showcase/empty",
+      "title": "空状态组件（Empty）",
+      "buzzNo": "2026092737"
+    },
+    {
+      "key": "componentShowcaseField",
+      "path": "component-showcase/field",
+      "title": "表单组件（Field）",
+      "buzzNo": "2026092738"
+    },
+    {
+      "key": "componentShowcaseIcon",
+      "path": "component-showcase/icon",
+      "title": "图标组件（Icon）",
+      "buzzNo": "2026092739"
+    },
+    {
+      "key": "componentShowcaseLayout",
+      "path": "component-showcase/layout",
+      "title": "布局组件（Layout）",
+      "buzzNo": "2026092740"
+    },
+    {
+      "key": "componentShowcaseNavigation",
+      "path": "component-showcase/navigation",
+      "title": "导航组件（Navigation / Menu）",
+      "buzzNo": "2026092741"
+    },
+    {
+      "key": "componentShowcasePagination",
+      "path": "component-showcase/pagination",
+      "title": "分页组件（Pagination）",
+      "buzzNo": "2026092742"
+    },
+    {
+      "key": "componentShowcaseProgress",
+      "path": "component-showcase/progress",
+      "title": "进度组件（Progress）",
+      "buzzNo": "2026092743"
+    },
+    {
+      "key": "componentShowcaseSkeleton",
+      "path": "component-showcase/skeleton",
+      "title": "骨架屏组件（Skeleton）",
+      "buzzNo": "2026092744"
+    },
+    {
+      "key": "componentShowcaseTable",
+      "path": "component-showcase/table",
+      "title": "表格组件（Table / Column）",
+      "buzzNo": "2026092745"
+    },
+    {
+      "key": "componentShowcaseTag",
+      "path": "component-showcase/tag",
+      "title": "标签组件（Tag）",
+      "buzzNo": "2026092746"
+    },
+    {
+      "key": "componentShowcaseTimeline",
+      "path": "component-showcase/timeline",
+      "title": "时间线组件（Timeline）",
+      "buzzNo": "2026092747"
+    },
+    {
+      "key": "resources",
+      "path": "resources",
+      "title": "项目文档索引",
+      "buzzNo": "2026092719"
+    }
+  ]
+}

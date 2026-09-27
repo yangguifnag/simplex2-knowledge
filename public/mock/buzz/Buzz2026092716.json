@@ -1,0 +1,235 @@
+{
+  "title": "属性、类型与默认值索引",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "此处说明如何查找配置契约；完整属性清单以组件属性说明.md 和 src/frame/defined 的当前源码为准。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件参考"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "属性、类型与默认值索引"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · Simplex 属性类型",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "STRING",
+              "description": "文本、名称、路径和格式配置；传入值应为 JS 字符串。"
+            },
+            {
+              "title": "NUMBER",
+              "description": "尺寸、数量、步进和延时；传入值应为 JS 数字。"
+            },
+            {
+              "title": "BOOLEAN",
+              "description": "开关、禁用、显示与否；使用 true/false，而非字符串。"
+            },
+            {
+              "title": "ARRAY / OBJECT",
+              "description": "选项、数据列表、样式和映射对象；注意数组项及对象字段结构。"
+            },
+            {
+              "title": "ANY / DATE",
+              "description": "由定义明确标注；使用适配器实际接受的值，不将其理解为任意 Element Plus prop 自动透传。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 从源码确认配置契约",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "属性定义",
+              "description": "src/frame/defined/<type>/<Kind>.js：核实字段名、类型、默认值和说明。"
+            },
+            {
+              "title": "模型继承",
+              "description": "src/frame/model/<type>/<Kind>.js：核实属性来自基础模型还是 kind 模型。"
+            },
+            {
+              "title": "实际消费",
+              "description": "src/components/<type>/<kind>/v1.0.0.vue：核实属性是否映射至 Element Plus。"
+            },
+            {
+              "title": "属性说明",
+              "description": "组件属性说明.md 汇总显式配置项；原生组件其他 props 不因 Element Plus 支持就自动成为 Simplex 配置。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 常见命名约定",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "寻址字段",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "type/kind/version 标识模型和实现版本；不要被控件视觉属性覆盖。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "避免冲突",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "Element Plus prop 与寻址字段同名时使用清晰专用名称，例如 buttonType、progressType。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "computed",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "fastComputed 由模型计算，不要求页面配置提供；依赖属性变化时检查计算关系。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

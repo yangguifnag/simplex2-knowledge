@@ -1,0 +1,356 @@
+{
+  "title": "项目文档索引",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "按任务选择权威资料：项目边界看 README，组件配置看属性说明，扩展实现看开发指南；具体代码始终以当前源码为准。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "项目文档索引"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 项目与配置参考",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "README.md",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "项目定位、职责边界、已接入组件、依赖环境、运行命令和框架集成链路。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "组件属性说明.md",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "逐组件记录项目显式声明的配置字段、Simplex 类型、默认值、继承和已声明事件。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "源码定义",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/frame/defined/<type>/ 是属性契约的直接来源；当文档与源码不一致时以实际代码为准。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Buzz 配置",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/config/pages/Buzz*.js 是本地页面和知识文章配置，文件编号由页面加载器解析。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · AI 与开发流程文档",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-flow",
+      "children": [
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "01",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "AI_DEVELOPMENT_GUIDE.md",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "详细说明目录职责、模型继承、组件命名、页面配置、适配器、renderer 行为和排错方法。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "AI开发流程向导.md",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "新增抽象类或具体组件时的步骤、文件约定和完成前检查清单。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "AI_QUICK_INSTRUCTIONS.md",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "可复制的通用修改、新增组件、新增 Field 和问题排查任务模板。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "package.json",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "确认 Node.js engines、依赖来源和实际提供的 npm scripts；不要假设仓库存在未声明的 test/lint 命令。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 实现问题的源码入口",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "模型与属性行为",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/frame/model/<type>/ 与 src/frame/defined/<type>/。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Element Plus 映射",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/components/<type>/<kind>/v<version>.vue。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "递归和插槽行为",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/renderer/rendererBase.vue，以及实际容器适配器的 slot。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "知识库菜单和路由",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/config/pages/Buzz2026092702.js、src/config/knowledgeRoutes.js、src/router/index.js。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "知识文章渲染",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/config/pages/knowledgePage.js、Knowledge.Article 模型和 article Vue 实现。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

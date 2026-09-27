@@ -1,0 +1,425 @@
+{
+  "title": "适配器与插槽实现",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "Vue 适配器是模型契约到 Element Plus 的明确边界：它负责读取 agent、绑定控件属性、呈现子节点，并只转发代码中显式实现的交互。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "开发指南"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "适配器与插槽实现"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 适配器的基本职责",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "接收模型 agent",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件以 agent prop 接收模型对象；常见模式兼容 agent.$agent 与直接 agent 两种形式。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "显式映射",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "每个 Simplex 属性应在模板或逻辑中明确映射到 Element Plus 属性，不默认 v-bind 整个模型。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "保持视图纯度",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "不在适配器里重复创建 Simplex 模型；数据契约和继承属于 frame/defined 与 frame/model。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "遵循文件身份",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "文件路径 components/<type>/<kind>/v<version>.vue 必须与 type、kind、version 计算的组件名一致。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 默认与具名插槽",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-steps",
+      "children": [
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 01",
+              "itemType": "primary",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "父模型 children",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "createPageConfig 将 children 从普通属性中分离，框架再建立模型 $children。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "renderer 分派",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "renderer-base 把没有 slotName 的子节点递归放入默认插槽；有 slotName 的子节点放到同名插槽。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "适配器声明插槽",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "Vue 组件需提供相同名称的 slot；若 Element Plus slot 有上下文参数，renderer 会向声明 slotProps 的子适配器传递只读对象，插槽容器仍需显式 v-bind 转发。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "子节点类型例外",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "Column 依赖 renderer 的 column 特殊分支；Layout 容器适配器也有直接布局子项的渲染处理。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 受控值和事件",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Field 双向值",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "编辑型控件通常通过 v-model 连接 $agent.value；定义类型需符合控件真实输出。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "声明事件",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "适配器可显式声明 emits 并监听 Element Plus 事件；仅有 emit 不代表业务消费方已经接收。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "当前通用 renderer",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "renderer-base 递归传 agent 和插槽，没有通用的任意事件监听器透传机制。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "可靠验证",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "分别检查控件输入、模型 value、Vue emit 和宿主 listener；构建成功不验证交互链路。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 适配器代码审阅清单",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "属性来源",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "每个访问的配置属性在基础定义或 kind 定义中存在。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "Element Plus API",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "绑定名称、值类型和事件名与当前使用的 Element Plus API 一致。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "插槽承载",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "容器确实提供递归 children 所需的默认或具名插槽。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "边界安全",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "没有误把普通字符串、模型属性或未筛选对象当成可执行事件或任意 props。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "title": "项目定位与职责",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "这是“项目总览”菜单的入口页：先理解项目负责什么、由哪些目录组成，再进入快速开始和架构专题。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "项目总览"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "项目定位与职责"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 项目定位与职责",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "simplex2-elementUI-frame 位于 Simplex 框架和 Element Plus 之间，专注于把 UI 能力接入配置驱动的渲染体系。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "它解决什么问题",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "把 Element Plus 的组件能力整理为统一的 Simplex type/kind/version 配置，让上层页面可以用模型树描述界面。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "它不负责什么",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "不处理业务 API、登录鉴权、权限、数据库、业务路由和数据持久化；这些属于宿主应用。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "你应该从哪里开始",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "先看一个 Buzz 节点，再沿 defined → model → components 三层追踪；不要只从 Element Plus 文档反推项目行为。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "当前运行环境",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "Vue 3、Vite 8、Element Plus、Vue Router 4；基础框架通过 file:../simplex2-frame 使用本地 sibling 工程。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 项目边界",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "区分扩展层与宿主应用，避免把本地集成入口误当成业务应用的必需结构。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "扩展层负责",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件适配、模型属性契约、运行时组件解析，以及供本地联调使用的示例页面。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "宿主应用负责",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "业务路由、权限和身份认证、接口调用、数据生命周期、持久化及服务端部署策略。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "按源码判断能力",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件只支持定义和 Vue 适配器明确接线的配置项；Element Plus 原生能力不会自动成为 Simplex 配置。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 从菜单进入对应专题",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-steps",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "项目总览菜单按“认识项目 → 快速运行 → 查找源码”的顺序组织，适合第一次阅读仓库时使用。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Timeline",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 01",
+              "itemType": "primary",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "01 · 项目定位与职责",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "当前页面说明扩展层的边界、技术栈和主要职责，适合先建立整体认识。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 02",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "02 · 快速开始",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "进入快速开始页面，确认 Node.js、相邻 simplex2-frame 工程、npm install、npm run dev 和 npm run build。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 03",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "03 · 目录结构与技术栈",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "回到当前页面查看源码目录和工具链，再根据任务进入 defined、model、components 或 renderer。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Timeline",
+              "kind": "Item",
+              "version": "1.0.0",
+              "timestamp": "步骤 04",
+              "itemType": "",
+              "children": [
+                {
+                  "type": "Card",
+                  "kind": "normal",
+                  "version": "1.0.0",
+                  "title": "04 · 继续深入架构",
+                  "shadow": "never",
+                  "collapsible": false,
+                  "collapseTransition": false,
+                  "children": [
+                    {
+                      "type": "Tag",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "从架构与运行机制菜单进入页面到组件渲染链路、模型继承、组件注册和插槽状态专题。",
+                      "tagType": "info",
+                      "effect": "light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 常用入口速查",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "知识库首页",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "/buzz/2026092702：查看左侧完整菜单和所有专题页面。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "组件集成展示",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "/buzz/2026092702/component-showcase：查看迁移后的 Field、Layout、Table、Navigation 等组件案例。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "配置目录",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "src/config/pages/Buzz*.js：文件名中的十位数字对应 URL 中的 buzzNo。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        },
+        {
+          "type": "Card",
+          "kind": "normal",
+          "version": "1.0.0",
+          "title": "项目文档",
+          "shadow": "hover",
+          "collapsible": false,
+          "collapseTransition": false,
+          "children": [
+            {
+              "type": "Tag",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "README.md、组件属性说明.md、AI_DEVELOPMENT_GUIDE.md：分别用于项目概览、属性契约和开发约定。",
+              "tagType": "info",
+              "effect": "light"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

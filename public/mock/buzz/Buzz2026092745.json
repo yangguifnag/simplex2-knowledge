@@ -1,0 +1,334 @@
+{
+  "title": "表格组件（Table / Column）",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Table 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "表格组件（Table / Column）"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 案例组件范围",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Table/Normal",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Column/Index",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Column/Normal",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 案例配置字段",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "component": "Table/Normal",
+              "property": "data",
+              "configuredValue": "[{\"id\":1001,\"name\":\"张三\",\"department\":\"产品部\",\"status\":\"启用\",\"createdAt\":\"2026-09-20\"},{\"id\":1002,\"name\":\"李四\",\"department\":\"研发部\",\"status\":\"启用\",\"createdAt\":\"2026-09-21\"},{\"id\":1003,\"name\":\"王五\",\"department\":\"运营部\",\"status\":\"停用\",\"createdAt\":\"2026-09-22\"}]"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "stripe",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "border",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "rowKey",
+              "configuredValue": "\"id\""
+            },
+            {
+              "component": "Column/Index",
+              "property": "label",
+              "configuredValue": "\"序号\""
+            },
+            {
+              "component": "Column/Index",
+              "property": "width",
+              "configuredValue": "\"70\""
+            },
+            {
+              "component": "Column/Index",
+              "property": "align",
+              "configuredValue": "\"center\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "label",
+              "configuredValue": "\"姓名\" / \"部门\" / \"状态\" / \"创建日期\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "prop",
+              "configuredValue": "\"name\" / \"department\" / \"status\" / \"createdAt\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "minWidth",
+              "configuredValue": "\"120\" / \"140\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "width",
+              "configuredValue": "\"100\" / \"140\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "align",
+              "configuredValue": "\"center\""
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "size": "small",
+          "tableLayout": "auto",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件",
+              "prop": "component",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段",
+              "prop": "property",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "案例配置值",
+              "prop": "configuredValue",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 配置代码",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-code",
+      "children": [
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "{\n  \"title\": \"用户列表\",\n  \"type\": \"Table\",\n  \"kind\": \"Normal\",\n  \"version\": \"1.0.0\",\n  \"data\": [\n    {\n      \"id\": 1001,\n      \"name\": \"张三\",\n      \"department\": \"产品部\",\n      \"status\": \"启用\",\n      \"createdAt\": \"2026-09-20\"\n    },\n    {\n      \"id\": 1002,\n      \"name\": \"李四\",\n      \"department\": \"研发部\",\n      \"status\": \"启用\",\n      \"createdAt\": \"2026-09-21\"\n    },\n    {\n      \"id\": 1003,\n      \"name\": \"王五\",\n      \"department\": \"运营部\",\n      \"status\": \"停用\",\n      \"createdAt\": \"2026-09-22\"\n    }\n  ],\n  \"stripe\": true,\n  \"border\": true,\n  \"rowKey\": \"id\",\n  \"children\": [\n    {\n      \"type\": \"Column\",\n      \"kind\": \"Index\",\n      \"version\": \"1.0.0\",\n      \"label\": \"序号\",\n      \"width\": \"70\",\n      \"align\": \"center\"\n    },\n    {\n      \"type\": \"Column\",\n      \"kind\": \"Normal\",\n      \"version\": \"1.0.0\",\n      \"label\": \"姓名\",\n      \"prop\": \"name\",\n      \"minWidth\": \"120\"\n    },\n    {\n      \"type\": \"Column\",\n      \"kind\": \"Normal\",\n      \"version\": \"1.0.0\",\n      \"label\": \"部门\",\n      \"prop\": \"department\",\n      \"minWidth\": \"140\"\n    },\n    {\n      \"type\": \"Column\",\n      \"kind\": \"Normal\",\n      \"version\": \"1.0.0\",\n      \"label\": \"状态\",\n      \"prop\": \"status\",\n      \"width\": \"100\",\n      \"align\": \"center\"\n    },\n    {\n      \"type\": \"Column\",\n      \"kind\": \"Normal\",\n      \"version\": \"1.0.0\",\n      \"label\": \"创建日期\",\n      \"prop\": \"createdAt\",\n      \"width\": \"140\"\n    }\n  ]\n}",
+          "tagType": "info",
+          "effect": "plain"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 案例展示",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "title": "用户列表",
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "id": 1001,
+              "name": "张三",
+              "department": "产品部",
+              "status": "启用",
+              "createdAt": "2026-09-20"
+            },
+            {
+              "id": 1002,
+              "name": "李四",
+              "department": "研发部",
+              "status": "启用",
+              "createdAt": "2026-09-21"
+            },
+            {
+              "id": 1003,
+              "name": "王五",
+              "department": "运营部",
+              "status": "停用",
+              "createdAt": "2026-09-22"
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "rowKey": "id",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "序号",
+              "width": "70",
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "姓名",
+              "prop": "name",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "部门",
+              "prop": "department",
+              "minWidth": "140"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "状态",
+              "prop": "status",
+              "width": "100",
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "创建日期",
+              "prop": "createdAt",
+              "width": "140"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

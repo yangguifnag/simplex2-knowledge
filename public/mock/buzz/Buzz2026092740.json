@@ -1,0 +1,470 @@
+{
+  "title": "布局组件（Layout）",
+  "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
+  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Layout 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "type": "Knowledge",
+  "kind": "Article",
+  "version": "1.0.0",
+  "children": [
+    {
+      "type": "Breadcrumb",
+      "kind": "Normal",
+      "version": "1.0.0",
+      "separator": "/",
+      "children": [
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "示例与资料"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "组件集成展示"
+        },
+        {
+          "type": "Breadcrumb",
+          "kind": "Item",
+          "version": "1.0.0",
+          "label": "布局组件（Layout）"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "01 · 案例组件范围",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "title": "Layout/Container",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Header",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Button/Normal",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Aside",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Main",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Footer",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Row",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Col",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/Splitter",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            },
+            {
+              "title": "Layout/SplitterPanel",
+              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+            }
+          ],
+          "stripe": true,
+          "border": false,
+          "size": "small",
+          "tableLayout": "fixed",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Index",
+              "version": "1.0.0",
+              "label": "#",
+              "width": "54",
+              "index": 1,
+              "align": "center"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "主题",
+              "prop": "title",
+              "width": "170"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "说明",
+              "prop": "description",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "02 · 案例配置字段",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-table",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "type": "Table",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "data": [
+            {
+              "component": "Button/Normal",
+              "property": "label",
+              "configuredValue": "\"页面头部\" / \"侧边栏\" / \"主要内容\" / \"页面底部\" / \"左侧内容\" / \"右侧内容\" / \"左侧面板内容\" / \"右侧面板内容\""
+            },
+            {
+              "component": "Button/Normal",
+              "property": "buttonType",
+              "configuredValue": "\"primary\" / \"success\""
+            },
+            {
+              "component": "Layout/Aside",
+              "property": "width",
+              "configuredValue": "\"200px\""
+            },
+            {
+              "component": "Layout/Row",
+              "property": "gutter",
+              "configuredValue": "16"
+            },
+            {
+              "component": "Layout/Row",
+              "property": "justify",
+              "configuredValue": "\"start\""
+            },
+            {
+              "component": "Layout/Row",
+              "property": "align",
+              "configuredValue": "\"middle\""
+            },
+            {
+              "component": "Layout/Col",
+              "property": "span",
+              "configuredValue": "12 / 8"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "xs",
+              "configuredValue": "24"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "sm",
+              "configuredValue": "12"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "offset",
+              "configuredValue": "2"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "md",
+              "configuredValue": "{\"span\":8,\"offset\":2}"
+            },
+            {
+              "component": "Layout/Splitter",
+              "property": "layout",
+              "configuredValue": "\"horizontal\""
+            },
+            {
+              "component": "Layout/Splitter",
+              "property": "lazy",
+              "configuredValue": "false"
+            },
+            {
+              "component": "Layout/SplitterPanel",
+              "property": "size",
+              "configuredValue": "\"35%\""
+            },
+            {
+              "component": "Layout/SplitterPanel",
+              "property": "min",
+              "configuredValue": "\"20%\" / \"30%\""
+            },
+            {
+              "component": "Layout/SplitterPanel",
+              "property": "collapsible",
+              "configuredValue": "true"
+            }
+          ],
+          "stripe": true,
+          "border": true,
+          "size": "small",
+          "tableLayout": "auto",
+          "children": [
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "组件",
+              "prop": "component",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段",
+              "prop": "property",
+              "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "案例配置值",
+              "prop": "configuredValue",
+              "minWidth": "280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "03 · 配置代码",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-code",
+      "children": [
+        {
+          "type": "Tag",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "label": "{\n  \"title\": \"Layout Container 页面结构\",\n  \"type\": \"Layout\",\n  \"kind\": \"Container\",\n  \"version\": \"1.0.0\",\n  \"children\": [\n    {\n      \"type\": \"Layout\",\n      \"kind\": \"Header\",\n      \"version\": \"1.0.0\",\n      \"children\": [\n        {\n          \"type\": \"Button\",\n          \"kind\": \"Normal\",\n          \"version\": \"1.0.0\",\n          \"label\": \"页面头部\",\n          \"buttonType\": \"primary\"\n        }\n      ]\n    },\n    {\n      \"type\": \"Layout\",\n      \"kind\": \"Container\",\n      \"version\": \"1.0.0\",\n      \"children\": [\n        {\n          \"type\": \"Layout\",\n          \"kind\": \"Aside\",\n          \"version\": \"1.0.0\",\n          \"width\": \"200px\",\n          \"children\": [\n            {\n              \"type\": \"Button\",\n              \"kind\": \"Normal\",\n              \"version\": \"1.0.0\",\n              \"label\": \"侧边栏\"\n            }\n          ]\n        },\n        {\n          \"type\": \"Layout\",\n          \"kind\": \"Main\",\n          \"version\": \"1.0.0\",\n          \"children\": [\n            {\n              \"type\": \"Button\",\n              \"kind\": \"Normal\",\n              \"version\": \"1.0.0\",\n              \"label\": \"主要内容\",\n              \"buttonType\": \"success\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"Layout\",\n      \"kind\": \"Footer\",\n      \"version\": \"1.0.0\",\n      \"children\": [\n        {\n          \"type\": \"Button\",\n          \"kind\": \"Normal\",\n          \"version\": \"1.0.0\",\n          \"label\": \"页面底部\"\n        }\n      ]\n    }\n  ]\n}",
+          "tagType": "info",
+          "effect": "plain"
+        }
+      ]
+    },
+    {
+      "type": "Card",
+      "kind": "normal",
+      "version": "1.0.0",
+      "title": "04 · 案例展示",
+      "shadow": "hover",
+      "collapsible": false,
+      "collapseTransition": false,
+      "bodyClass": "knowledge-section-body-cards",
+      "children": [
+        {
+          "type": "Alert",
+          "kind": "Normal",
+          "version": "1.0.0",
+          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "alertType": "info",
+          "closable": false,
+          "showIcon": true,
+          "effect": "light"
+        },
+        {
+          "title": "Layout Container 页面结构",
+          "type": "Layout",
+          "kind": "Container",
+          "version": "1.0.0",
+          "children": [
+            {
+              "type": "Layout",
+              "kind": "Header",
+              "version": "1.0.0",
+              "children": [
+                {
+                  "type": "Button",
+                  "kind": "Normal",
+                  "version": "1.0.0",
+                  "label": "页面头部",
+                  "buttonType": "primary"
+                }
+              ]
+            },
+            {
+              "type": "Layout",
+              "kind": "Container",
+              "version": "1.0.0",
+              "children": [
+                {
+                  "type": "Layout",
+                  "kind": "Aside",
+                  "version": "1.0.0",
+                  "width": "200px",
+                  "children": [
+                    {
+                      "type": "Button",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "侧边栏"
+                    }
+                  ]
+                },
+                {
+                  "type": "Layout",
+                  "kind": "Main",
+                  "version": "1.0.0",
+                  "children": [
+                    {
+                      "type": "Button",
+                      "kind": "Normal",
+                      "version": "1.0.0",
+                      "label": "主要内容",
+                      "buttonType": "success"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Layout",
+              "kind": "Footer",
+              "version": "1.0.0",
+              "children": [
+                {
+                  "type": "Button",
+                  "kind": "Normal",
+                  "version": "1.0.0",
+                  "label": "页面底部"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Layout Row/Col 栅格布局",
+          "type": "Layout",
+          "kind": "Row",
+          "version": "1.0.0",
+          "gutter": 16,
+          "justify": "start",
+          "align": "middle",
+          "children": [
+            {
+              "title": "半宽列",
+              "type": "Layout",
+              "kind": "Col",
+              "version": "1.0.0",
+              "span": 12,
+              "xs": 24,
+              "sm": 12,
+              "children": [
+                {
+                  "type": "Button",
+                  "kind": "Normal",
+                  "version": "1.0.0",
+                  "label": "左侧内容",
+                  "buttonType": "primary"
+                }
+              ]
+            },
+            {
+              "title": "带偏移列",
+              "type": "Layout",
+              "kind": "Col",
+              "version": "1.0.0",
+              "span": 8,
+              "offset": 2,
+              "md": {
+                "span": 8,
+                "offset": 2
+              },
+              "children": [
+                {
+                  "type": "Button",
+                  "kind": "Normal",
+                  "version": "1.0.0",
+                  "label": "右侧内容",
+                  "buttonType": "success"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Layout Splitter 分隔布局",
+          "type": "Layout",
+          "kind": "Splitter",
+          "version": "1.0.0",
+          "layout": "horizontal",
+          "lazy": false,
+          "children": [
+            {
+              "title": "左侧面板",
+              "type": "Layout",
+              "kind": "SplitterPanel",
+              "version": "1.0.0",
+              "size": "35%",
+              "min": "20%",
+              "collapsible": true,
+              "children": [
+                {
+                  "type": "Button",
+                  "kind": "Normal",
+                  "version": "1.0.0",
+                  "label": "左侧面板内容"
+                }
+              ]
+            },
+            {
+              "title": "右侧面板",
+              "type": "Layout",
+              "kind": "SplitterPanel",
+              "version": "1.0.0",
+              "min": "30%",
+              "children": [
+                {
+                  "type": "Button",
+                  "kind": "Normal",
+                  "version": "1.0.0",
+                  "label": "右侧面板内容",
+                  "buttonType": "primary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
