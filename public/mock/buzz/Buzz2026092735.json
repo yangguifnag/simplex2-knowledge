@@ -1,7 +1,7 @@
 {
   "title": "轮播组件（Carousel）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Carousel 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Carousel。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Carousel/Banner",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/carousel/Carousel.js + src/frame/defined/carousel/banner.js；模型：src/frame/model/carousel/Carousel.js + src/frame/model/carousel/banner.js；适配器：src/components/carousel/banner/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -113,28 +113,171 @@
           "data": [
             {
               "component": "Carousel/Banner",
+              "property": "initialIndex",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "初始激活的轮播项索引",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
               "property": "height",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "轮播高度",
               "configuredValue": "\"280px\""
             },
             {
               "component": "Carousel/Banner",
+              "property": "trigger",
+              "type": "STRING",
+              "defaultValue": "\"hover\"",
+              "description": "指示器触发方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
               "property": "autoplay",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否自动切换",
               "configuredValue": "true"
             },
             {
               "component": "Carousel/Banner",
               "property": "interval",
+              "type": "NUMBER",
+              "defaultValue": "3000",
+              "description": "自动切换的时间间隔（毫秒）",
               "configuredValue": "3500"
             },
             {
               "component": "Carousel/Banner",
+              "property": "indicatorPosition",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "指示器位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
               "property": "arrow",
+              "type": "STRING",
+              "defaultValue": "\"hover\"",
+              "description": "切换箭头显示时机",
               "configuredValue": "\"hover\""
             },
             {
               "component": "Carousel/Banner",
+              "property": "carouselType",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "轮播类型",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "cardScale",
+              "type": "NUMBER",
+              "defaultValue": "0.83",
+              "description": "卡片模式下副卡片缩放比例",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "loop",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否循环显示轮播项",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "direction",
+              "type": "STRING",
+              "defaultValue": "\"horizontal\"",
+              "description": "轮播方向",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "pauseOnHover",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "鼠标悬停时是否暂停自动切换",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "motionBlur",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否启用动态模糊",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
               "property": "items",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "Banner 项目列表",
               "configuredValue": "[{\"id\":\"banner-1\",\"image\":\"https://picsum.photos/id/1018/1200/500\",\"title\":\"探索自然之美\",\"description\":\"用一段旅程发现新的风景。\",\"link\":\"https://example.com/nature\"},{\"id\":\"banner-2\",\"image\":\"https://picsum.photos/id/1015/1200/500\",\"title\":\"记录每一个瞬间\",\"description\":\"把值得分享的故事留在页面上。\",\"link\":\"https://example.com/story\"},{\"id\":\"banner-3\",\"image\":\"https://picsum.photos/id/1019/1200/500\",\"title\":\"从今天开始创造\",\"description\":\"让灵感成为下一次行动的起点。\"}]"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "itemImageName",
+              "type": "STRING",
+              "defaultValue": "\"image\"",
+              "description": "Banner 图片字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "itemTitleName",
+              "type": "STRING",
+              "defaultValue": "\"title\"",
+              "description": "Banner 标题字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "itemDescriptionName",
+              "type": "STRING",
+              "defaultValue": "\"description\"",
+              "description": "Banner 描述字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "itemLinkName",
+              "type": "STRING",
+              "defaultValue": "\"link\"",
+              "description": "Banner 链接字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "fit",
+              "type": "STRING",
+              "defaultValue": "\"cover\"",
+              "description": "Banner 图片填充方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "showTitle",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示 Banner 标题",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Carousel/Banner",
+              "property": "showDescription",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示 Banner 描述",
+              "configuredValue": "未在案例中设置"
             }
           ],
           "stripe": true,
@@ -148,7 +291,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -156,7 +299,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -164,7 +331,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -204,7 +371,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

@@ -1,7 +1,7 @@
 {
   "title": "提示组件（Alert）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Alert 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Alert。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Alert/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/alert/Alert.js + src/frame/defined/alert/Normal.js；模型：src/frame/model/alert/Alert.js + src/frame/model/alert/Normal.js；适配器：src/components/alert/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -113,37 +113,66 @@
           "data": [
             {
               "component": "Alert/Normal",
+              "property": "title",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "提示标题",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Alert/Normal",
               "property": "description",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "提示描述",
               "configuredValue": "\"保存成功后可继续编辑，或关闭当前提示。\" / \"此操作会立即影响所有正在使用该配置的用户。\""
             },
             {
               "component": "Alert/Normal",
               "property": "alertType",
+              "type": "STRING",
+              "defaultValue": "\"info\"",
+              "description": "提示类型",
               "configuredValue": "\"success\" / \"warning\""
             },
             {
               "component": "Alert/Normal",
-              "property": "showIcon",
-              "configuredValue": "true"
-            },
-            {
-              "component": "Alert/Normal",
-              "property": "closeText",
-              "configuredValue": "\"知道了\""
-            },
-            {
-              "component": "Alert/Normal",
               "property": "closable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可关闭",
               "configuredValue": "false"
             },
             {
               "component": "Alert/Normal",
               "property": "center",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "内容是否居中显示",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Alert/Normal",
+              "property": "closeText",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "自定义关闭按钮文本",
+              "configuredValue": "\"知道了\""
+            },
+            {
+              "component": "Alert/Normal",
+              "property": "showIcon",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示类型图标",
               "configuredValue": "true"
             },
             {
               "component": "Alert/Normal",
               "property": "effect",
+              "type": "STRING",
+              "defaultValue": "\"light\"",
+              "description": "提示主题",
               "configuredValue": "\"dark\""
             }
           ],
@@ -158,7 +187,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -166,7 +195,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -174,7 +227,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -214,7 +267,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

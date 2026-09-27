@@ -1,7 +1,7 @@
 {
   "title": "骨架屏组件（Skeleton）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Skeleton 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Skeleton。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,35 +49,35 @@
           "data": [
             {
               "title": "Skeleton/default",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/default.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/default.js；适配器：src/components/skeleton/default/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/Table",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/Table.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/Table.js；适配器：src/components/skeleton/table/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/Menu",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/Menu.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/Menu.js；适配器：src/components/skeleton/menu/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/Image",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/Image.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/Image.js；适配器：src/components/skeleton/image/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/Layout",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/Layout.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/Layout.js；适配器：src/components/skeleton/layout/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/Icon",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/Icon.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/Icon.js；适配器：src/components/skeleton/icon/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/Avatar",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/Avatar.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/Avatar.js；适配器：src/components/skeleton/avatar/v1.0.0.vue。"
             },
             {
               "title": "Skeleton/field",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/skeleton/Skeleton.js + src/frame/defined/skeleton/field.js；模型：src/frame/model/skeleton/Skeleton.js + src/frame/model/skeleton/field.js；适配器：src/components/skeleton/field/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -118,7 +118,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -128,7 +128,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -142,207 +142,594 @@
             {
               "component": "Skeleton/default",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/default",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/default",
               "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
               "configuredValue": "4"
             },
             {
               "component": "Skeleton/default",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/default",
               "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
               "configuredValue": "\"80%\""
+            },
+            {
+              "component": "Skeleton/default",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Skeleton/Table",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Table",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Table",
+              "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Table",
               "property": "tableRows",
+              "type": "NUMBER",
+              "defaultValue": "5",
+              "description": "表格骨架行数",
               "configuredValue": "4"
             },
             {
               "component": "Skeleton/Table",
               "property": "columns",
+              "type": "NUMBER",
+              "defaultValue": "4",
+              "description": "表格骨架列数",
               "configuredValue": "3"
             },
             {
               "component": "Skeleton/Table",
               "property": "showHeader",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示表头骨架",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Table",
+              "property": "headerHeight",
+              "type": "STRING",
+              "defaultValue": "\"40px\"",
+              "description": "表头骨架高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Table",
+              "property": "rowHeight",
+              "type": "STRING",
+              "defaultValue": "\"40px\"",
+              "description": "表格行骨架高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Table",
               "property": "stripe",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示斑马纹行骨架",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Menu",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Menu",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Menu",
               "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
               "configuredValue": "5"
             },
             {
               "component": "Skeleton/Menu",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Menu",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Menu",
               "property": "itemHeight",
+              "type": "STRING",
+              "defaultValue": "\"36px\"",
+              "description": "菜单项骨架高度",
               "configuredValue": "\"40px\""
             },
             {
               "component": "Skeleton/Menu",
               "property": "itemGap",
+              "type": "STRING",
+              "defaultValue": "\"8px\"",
+              "description": "菜单项之间的间距",
               "configuredValue": "\"6px\""
             },
             {
               "component": "Skeleton/Menu",
               "property": "indent",
+              "type": "STRING",
+              "defaultValue": "\"16px\"",
+              "description": "子级菜单项缩进",
               "configuredValue": "\"20px\""
             },
             {
               "component": "Skeleton/Menu",
               "property": "showIcon",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示图标骨架",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Image",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Image",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Image",
+              "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Image",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Image",
               "property": "width",
+              "type": "ANY",
+              "defaultValue": "\"100%\"",
+              "description": "图片占位宽度",
               "configuredValue": "\"320px\""
             },
             {
               "component": "Skeleton/Image",
               "property": "height",
+              "type": "ANY",
+              "defaultValue": "\"200px\"",
+              "description": "图片占位高度",
               "configuredValue": "\"180px\""
             },
             {
               "component": "Skeleton/Image",
               "property": "borderRadius",
+              "type": "STRING",
+              "defaultValue": "\"4px\"",
+              "description": "图片占位圆角",
               "configuredValue": "\"8px\""
             },
             {
               "component": "Skeleton/Layout",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Layout",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Layout",
-              "property": "direction",
-              "configuredValue": "\"horizontal\""
-            },
-            {
-              "component": "Skeleton/Layout",
               "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
               "configuredValue": "2"
             },
             {
               "component": "Skeleton/Layout",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Layout",
+              "property": "direction",
+              "type": "STRING",
+              "defaultValue": "\"vertical\"",
+              "description": "占位内容排列方向：vertical 或 horizontal",
+              "configuredValue": "\"horizontal\""
+            },
+            {
+              "component": "Skeleton/Layout",
               "property": "columns",
+              "type": "NUMBER",
+              "defaultValue": "2",
+              "description": "每行占位列数",
               "configuredValue": "3"
             },
             {
               "component": "Skeleton/Layout",
               "property": "gap",
+              "type": "STRING",
+              "defaultValue": "\"16px\"",
+              "description": "行列之间的间距",
               "configuredValue": "\"12px\""
             },
             {
               "component": "Skeleton/Layout",
               "property": "itemHeight",
+              "type": "STRING",
+              "defaultValue": "\"80px\"",
+              "description": "布局项占位高度",
               "configuredValue": "\"100px\""
             },
             {
               "component": "Skeleton/Icon",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Icon",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Icon",
+              "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Icon",
               "property": "size",
+              "type": "ANY",
+              "defaultValue": "\"24px\"",
+              "description": "图标骨架尺寸",
               "configuredValue": "\"32px\""
             },
             {
               "component": "Skeleton/Icon",
               "property": "shape",
+              "type": "STRING",
+              "defaultValue": "\"square\"",
+              "description": "图标骨架形状：square 或 circle",
               "configuredValue": "\"square\""
+            },
+            {
+              "component": "Skeleton/Icon",
+              "property": "borderRadius",
+              "type": "STRING",
+              "defaultValue": "\"4px\"",
+              "description": "方形图标骨架圆角",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Skeleton/Avatar",
               "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Avatar",
               "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
               "configuredValue": "true"
             },
             {
               "component": "Skeleton/Avatar",
+              "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Avatar",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/Avatar",
               "property": "size",
+              "type": "ANY",
+              "defaultValue": "\"40px\"",
+              "description": "头像骨架尺寸",
               "configuredValue": "\"48px\""
             },
             {
               "component": "Skeleton/Avatar",
               "property": "shape",
+              "type": "STRING",
+              "defaultValue": "\"circle\"",
+              "description": "头像骨架形状：circle 或 square",
               "configuredValue": "\"circle\""
             },
             {
               "component": "Skeleton/field",
-              "property": "@skeleton",
-              "configuredValue": "{\"animated\":true,\"load\":true,\"rows\":1,\"count\":1,\"rowWidth\":\"60%\",\"throttle\":0}"
+              "property": "animated",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用骨架屏动画",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "load",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示骨架屏",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "骨架行数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "count",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "骨架屏数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "rowWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "骨架行宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "throttle",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "延迟显示时间（毫秒）",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Skeleton/field",
               "property": "layout",
+              "type": "STRING",
+              "defaultValue": "\"horizontal\"",
+              "description": "字段布局方式：horizontal 或 vertical",
               "configuredValue": "\"vertical\""
             },
             {
               "component": "Skeleton/field",
               "property": "labelWidth",
+              "type": "STRING",
+              "defaultValue": "\"80px\"",
+              "description": "字段标签骨架宽度",
               "configuredValue": "\"80px\""
             },
             {
               "component": "Skeleton/field",
               "property": "contentWidth",
+              "type": "STRING",
+              "defaultValue": "\"100%\"",
+              "description": "字段内容骨架宽度",
               "configuredValue": "\"60%\""
+            },
+            {
+              "component": "Skeleton/field",
+              "property": "@skeleton",
+              "type": "未声明",
+              "defaultValue": "\"未声明\"",
+              "description": "该字段未在对应 defined 文件中声明，需结合模型和适配器源码确认。",
+              "configuredValue": "{\"animated\":true,\"load\":true,\"rows\":1,\"count\":1,\"rowWidth\":\"60%\",\"throttle\":0}"
             }
           ],
           "stripe": true,
@@ -356,7 +743,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -364,7 +751,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -372,7 +783,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -412,7 +823,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

@@ -1,7 +1,7 @@
 {
   "title": "表格组件（Table / Column）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Table 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Table。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,15 +49,15 @@
           "data": [
             {
               "title": "Table/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/table/Table.js + src/frame/defined/table/Normal.js；模型：src/frame/model/table/Table.js + src/frame/model/table/Normal.js；适配器：src/components/table/normal/v1.0.0.vue。"
             },
             {
               "title": "Column/Index",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/column/Column.js + src/frame/defined/column/Index.js；模型：src/frame/model/column/Column.js + src/frame/model/column/Index.js；适配器：src/components/column/index/v1.0.0.vue。"
             },
             {
               "title": "Column/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/column/Column.js + src/frame/defined/column/Normal.js；模型：src/frame/model/column/Column.js + src/frame/model/column/Normal.js；适配器：src/components/column/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -98,7 +98,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -108,7 +108,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -122,62 +122,322 @@
             {
               "component": "Table/Normal",
               "property": "data",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "表格数据",
               "configuredValue": "[{\"id\":1001,\"name\":\"张三\",\"department\":\"产品部\",\"status\":\"启用\",\"createdAt\":\"2026-09-20\"},{\"id\":1002,\"name\":\"李四\",\"department\":\"研发部\",\"status\":\"启用\",\"createdAt\":\"2026-09-21\"},{\"id\":1003,\"name\":\"王五\",\"department\":\"运营部\",\"status\":\"停用\",\"createdAt\":\"2026-09-22\"}]"
             },
             {
               "component": "Table/Normal",
+              "property": "height",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表格高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "maxHeight",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表格最大高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
               "property": "stripe",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示斑马纹",
               "configuredValue": "true"
             },
             {
               "component": "Table/Normal",
               "property": "border",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示边框",
               "configuredValue": "true"
             },
             {
               "component": "Table/Normal",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表格尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "fit",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "列宽是否自撑开",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "showHeader",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示表头",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "highlightCurrentRow",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否高亮当前行",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
               "property": "rowKey",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "行数据的 Key",
               "configuredValue": "\"id\""
+            },
+            {
+              "component": "Table/Normal",
+              "property": "emptyText",
+              "type": "STRING",
+              "defaultValue": "\"暂无数据\"",
+              "description": "空数据时显示的文本",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "defaultExpandAll",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否默认展开所有行",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "showSummary",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示合计行",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "sumText",
+              "type": "STRING",
+              "defaultValue": "\"合计\"",
+              "description": "合计行第一列文本",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "tableLayout",
+              "type": "STRING",
+              "defaultValue": "\"fixed\"",
+              "description": "表格布局",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Table/Normal",
+              "property": "showOverflowTooltip",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "溢出时是否显示 tooltip",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Column/Index",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列标题",
               "configuredValue": "\"序号\""
             },
             {
               "component": "Column/Index",
               "property": "width",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列宽",
               "configuredValue": "\"70\""
             },
             {
               "component": "Column/Index",
+              "property": "minWidth",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "最小列宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
+              "property": "fixed",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列固定位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
               "property": "align",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "单元格水平对齐方式",
               "configuredValue": "\"center\""
+            },
+            {
+              "component": "Column/Index",
+              "property": "headerAlign",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表头水平对齐方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
+              "property": "resizable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否允许调整列宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
+              "property": "showOverflowTooltip",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "溢出时是否显示 tooltip",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
+              "property": "className",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "单元格类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
+              "property": "labelClassName",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表头类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Index",
+              "property": "index",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "索引列起始值",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Column/Normal",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列标题",
               "configuredValue": "\"姓名\" / \"部门\" / \"状态\" / \"创建日期\""
             },
             {
               "component": "Column/Normal",
-              "property": "prop",
-              "configuredValue": "\"name\" / \"department\" / \"status\" / \"createdAt\""
-            },
-            {
-              "component": "Column/Normal",
-              "property": "minWidth",
-              "configuredValue": "\"120\" / \"140\""
-            },
-            {
-              "component": "Column/Normal",
               "property": "width",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列宽",
               "configuredValue": "\"100\" / \"140\""
             },
             {
               "component": "Column/Normal",
+              "property": "minWidth",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "最小列宽",
+              "configuredValue": "\"120\" / \"140\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "fixed",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列固定位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
               "property": "align",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "单元格水平对齐方式",
               "configuredValue": "\"center\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "headerAlign",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表头水平对齐方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
+              "property": "resizable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否允许调整列宽",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
+              "property": "showOverflowTooltip",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "溢出时是否显示 tooltip",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
+              "property": "className",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "单元格类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
+              "property": "labelClassName",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "表头类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
+              "property": "prop",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "列数据字段",
+              "configuredValue": "\"name\" / \"department\" / \"status\" / \"createdAt\""
+            },
+            {
+              "component": "Column/Normal",
+              "property": "sortable",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否允许排序",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Column/Normal",
+              "property": "sortOrders",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "排序策略",
+              "configuredValue": "未在案例中设置"
             }
           ],
           "stripe": true,
@@ -191,7 +451,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -199,7 +459,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -207,7 +491,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -247,7 +531,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

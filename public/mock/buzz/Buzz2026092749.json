@@ -1,7 +1,7 @@
 {
   "title": "返回顶部组件（Backtop）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Backtop 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Backtop。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Backtop/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/backtop/Backtop.js + src/frame/defined/backtop/Normal.js；模型：src/frame/model/backtop/Backtop.js + src/frame/model/backtop/Normal.js；适配器：src/components/backtop/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -114,21 +114,33 @@
             {
               "component": "Backtop/Normal",
               "property": "target",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "滚动目标容器的 CSS 选择器",
               "configuredValue": "\".buzz-page .el-main\""
             },
             {
               "component": "Backtop/Normal",
               "property": "visibilityHeight",
+              "type": "NUMBER",
+              "defaultValue": "200",
+              "description": "触发显示的滚动高度",
               "configuredValue": "160"
             },
             {
               "component": "Backtop/Normal",
               "property": "right",
+              "type": "NUMBER",
+              "defaultValue": "40",
+              "description": "距视口右侧距离",
               "configuredValue": "32"
             },
             {
               "component": "Backtop/Normal",
               "property": "bottom",
+              "type": "NUMBER",
+              "defaultValue": "40",
+              "description": "距视口底部距离",
               "configuredValue": "32"
             }
           ],
@@ -143,7 +155,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -151,7 +163,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -159,7 +195,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -199,7 +235,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

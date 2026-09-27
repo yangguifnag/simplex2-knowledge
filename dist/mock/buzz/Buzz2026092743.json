@@ -1,7 +1,7 @@
 {
   "title": "进度组件（Progress）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Progress 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Progress。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Progress/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/progress/Progress.js + src/frame/defined/progress/Normal.js；模型：src/frame/model/progress/Progress.js + src/frame/model/progress/Normal.js；适配器：src/components/progress/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -114,47 +114,114 @@
             {
               "component": "Progress/Normal",
               "property": "percentage",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "进度百分比",
               "configuredValue": "68 / 100 / 45 / 75"
             },
             {
               "component": "Progress/Normal",
+              "property": "progressType",
+              "type": "STRING",
+              "defaultValue": "\"line\"",
+              "description": "进度条类型",
+              "configuredValue": "\"circle\" / \"dashboard\""
+            },
+            {
+              "component": "Progress/Normal",
+              "property": "status",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "进度条状态",
+              "configuredValue": "\"success\" / \"warning\""
+            },
+            {
+              "component": "Progress/Normal",
+              "property": "indeterminate",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否启用不确定进度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Progress/Normal",
+              "property": "duration",
+              "type": "NUMBER",
+              "defaultValue": "3",
+              "description": "不确定进度或条纹流动动画时长（秒）",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Progress/Normal",
               "property": "strokeWidth",
+              "type": "NUMBER",
+              "defaultValue": "6",
+              "description": "进度条宽度",
               "configuredValue": "14"
             },
             {
               "component": "Progress/Normal",
+              "property": "strokeLinecap",
+              "type": "STRING",
+              "defaultValue": "\"round\"",
+              "description": "进度条端点形状",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Progress/Normal",
               "property": "textInside",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "百分比是否显示在进度条内部",
               "configuredValue": "true"
             },
             {
               "component": "Progress/Normal",
+              "property": "width",
+              "type": "NUMBER",
+              "defaultValue": "126",
+              "description": "环形进度条画布宽度",
+              "configuredValue": "100"
+            },
+            {
+              "component": "Progress/Normal",
+              "property": "showText",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示百分比文字",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Progress/Normal",
+              "property": "color",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "进度条颜色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Progress/Normal",
+              "property": "colorLevels",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "进度条颜色分段配置",
+              "configuredValue": "[{\"color\":\"#f56c6c\",\"percentage\":20},{\"color\":\"#e6a23c\",\"percentage\":50},{\"color\":\"#67c23a\",\"percentage\":100}]"
+            },
+            {
+              "component": "Progress/Normal",
               "property": "striped",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示条纹",
               "configuredValue": "true"
             },
             {
               "component": "Progress/Normal",
               "property": "stripedFlow",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "条纹是否流动",
               "configuredValue": "true"
-            },
-            {
-              "component": "Progress/Normal",
-              "property": "status",
-              "configuredValue": "\"success\" / \"warning\""
-            },
-            {
-              "component": "Progress/Normal",
-              "property": "progressType",
-              "configuredValue": "\"circle\" / \"dashboard\""
-            },
-            {
-              "component": "Progress/Normal",
-              "property": "width",
-              "configuredValue": "100"
-            },
-            {
-              "component": "Progress/Normal",
-              "property": "colorLevels",
-              "configuredValue": "[{\"color\":\"#f56c6c\",\"percentage\":20},{\"color\":\"#e6a23c\",\"percentage\":50},{\"color\":\"#67c23a\",\"percentage\":100}]"
             }
           ],
           "stripe": true,
@@ -168,7 +235,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -176,7 +243,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -184,7 +275,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -224,7 +315,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

@@ -1,7 +1,7 @@
 {
   "title": "布局组件（Layout）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Layout 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Layout。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,43 +49,43 @@
           "data": [
             {
               "title": "Layout/Container",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Container.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Container.js；适配器：src/components/layout/container/v1.0.0.vue。"
             },
             {
               "title": "Layout/Header",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Header.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Header.js；适配器：src/components/layout/header/v1.0.0.vue。"
             },
             {
               "title": "Button/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/button/Button.js + src/frame/defined/button/Normal.js；模型：src/frame/model/button/Button.js + src/frame/model/button/Normal.js；适配器：src/components/button/normal/v1.0.0.vue。"
             },
             {
               "title": "Layout/Aside",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Aside.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Aside.js；适配器：src/components/layout/aside/v1.0.0.vue。"
             },
             {
               "title": "Layout/Main",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Main.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Main.js；适配器：src/components/layout/main/v1.0.0.vue。"
             },
             {
               "title": "Layout/Footer",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Footer.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Footer.js；适配器：src/components/layout/footer/v1.0.0.vue。"
             },
             {
               "title": "Layout/Row",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Row.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Row.js；适配器：src/components/layout/row/v1.0.0.vue。"
             },
             {
               "title": "Layout/Col",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Col.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Col.js；适配器：src/components/layout/col/v1.0.0.vue。"
             },
             {
               "title": "Layout/Splitter",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/Splitter.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/Splitter.js；适配器：src/components/layout/splitter/v1.0.0.vue。"
             },
             {
               "title": "Layout/SplitterPanel",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/layout/Layout.js + src/frame/defined/layout/SplitterPanel.js；模型：src/frame/model/layout/Layout.js + src/frame/model/layout/SplitterPanel.js；适配器：src/components/layout/splitterpanel/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -126,7 +126,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -136,7 +136,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -148,83 +148,347 @@
           "version": "1.0.0",
           "data": [
             {
+              "component": "Layout/Container",
+              "property": "direction",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "子元素排列方向：horizontal 或 vertical；留空时根据子元素自动判断",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Header",
+              "property": "height",
+              "type": "STRING",
+              "defaultValue": "\"60px\"",
+              "description": "页头区域高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
               "component": "Button/Normal",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "按钮文本",
               "configuredValue": "\"页面头部\" / \"侧边栏\" / \"主要内容\" / \"页面底部\" / \"左侧内容\" / \"右侧内容\" / \"左侧面板内容\" / \"右侧面板内容\""
             },
             {
               "component": "Button/Normal",
               "property": "buttonType",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "按钮类型",
               "configuredValue": "\"primary\" / \"success\""
+            },
+            {
+              "component": "Button/Normal",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "按钮尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "plain",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为朴素按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "text",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为文字按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "bg",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "文字按钮是否显示背景",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "link",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为链接按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "round",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为圆角按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "circle",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为圆形按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "loading",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示加载状态",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "nativeType",
+              "type": "STRING",
+              "defaultValue": "\"button\"",
+              "description": "原生按钮类型",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动获取焦点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "autoInsertSpace",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动在两个中文字符间插入空格",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "color",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "自定义按钮颜色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "dark",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否使用暗色模式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Button/Normal",
+              "property": "tag",
+              "type": "STRING",
+              "defaultValue": "\"button\"",
+              "description": "按钮根元素标签",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Layout/Aside",
               "property": "width",
+              "type": "STRING",
+              "defaultValue": "\"300px\"",
+              "description": "侧边栏区域宽度",
               "configuredValue": "\"200px\""
+            },
+            {
+              "component": "Layout/Main",
+              "property": "routerView",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否在主内容区显示当前子路由",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Footer",
+              "property": "height",
+              "type": "STRING",
+              "defaultValue": "\"60px\"",
+              "description": "页脚区域高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Row",
+              "property": "tag",
+              "type": "STRING",
+              "defaultValue": "\"div\"",
+              "description": "自定义根元素标签",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Layout/Row",
               "property": "gutter",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "栅格间隔",
               "configuredValue": "16"
             },
             {
               "component": "Layout/Row",
               "property": "justify",
+              "type": "STRING",
+              "defaultValue": "\"start\"",
+              "description": "水平排列方式：start、center、end、space-around、space-between 或 space-evenly",
               "configuredValue": "\"start\""
             },
             {
               "component": "Layout/Row",
               "property": "align",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "垂直对齐方式：top、middle 或 bottom",
               "configuredValue": "\"middle\""
             },
             {
               "component": "Layout/Col",
+              "property": "tag",
+              "type": "STRING",
+              "defaultValue": "\"div\"",
+              "description": "自定义根元素标签",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Col",
               "property": "span",
+              "type": "NUMBER",
+              "defaultValue": "24",
+              "description": "栅格占据的列数",
               "configuredValue": "12 / 8"
             },
             {
               "component": "Layout/Col",
+              "property": "offset",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "栅格左侧的间隔列数",
+              "configuredValue": "2"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "pull",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "栅格向左移动的列数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "push",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "栅格向右移动的列数",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Col",
               "property": "xs",
+              "type": "ANY",
+              "defaultValue": "{}",
+              "description": "小于 768px 时的栅格配置，可为列数或配置对象",
               "configuredValue": "24"
             },
             {
               "component": "Layout/Col",
               "property": "sm",
+              "type": "ANY",
+              "defaultValue": "{}",
+              "description": "大于等于 768px 时的栅格配置，可为列数或配置对象",
               "configuredValue": "12"
             },
             {
               "component": "Layout/Col",
-              "property": "offset",
-              "configuredValue": "2"
+              "property": "md",
+              "type": "ANY",
+              "defaultValue": "{}",
+              "description": "大于等于 992px 时的栅格配置，可为列数或配置对象",
+              "configuredValue": "{\"span\":8,\"offset\":2}"
             },
             {
               "component": "Layout/Col",
-              "property": "md",
-              "configuredValue": "{\"span\":8,\"offset\":2}"
+              "property": "lg",
+              "type": "ANY",
+              "defaultValue": "{}",
+              "description": "大于等于 1200px 时的栅格配置，可为列数或配置对象",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/Col",
+              "property": "xl",
+              "type": "ANY",
+              "defaultValue": "{}",
+              "description": "大于等于 1920px 时的栅格配置，可为列数或配置对象",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Layout/Splitter",
               "property": "layout",
+              "type": "STRING",
+              "defaultValue": "\"horizontal\"",
+              "description": "分隔布局方向：horizontal 或 vertical",
               "configuredValue": "\"horizontal\""
             },
             {
               "component": "Layout/Splitter",
               "property": "lazy",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否在拖动结束后再更新面板尺寸",
               "configuredValue": "false"
             },
             {
               "component": "Layout/SplitterPanel",
-              "property": "size",
-              "configuredValue": "\"35%\""
-            },
-            {
-              "component": "Layout/SplitterPanel",
               "property": "min",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "面板最小尺寸，支持像素值或百分比",
               "configuredValue": "\"20%\" / \"30%\""
             },
             {
               "component": "Layout/SplitterPanel",
+              "property": "max",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "面板最大尺寸，支持像素值或百分比",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/SplitterPanel",
+              "property": "size",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "面板尺寸，支持像素值或百分比",
+              "configuredValue": "\"35%\""
+            },
+            {
+              "component": "Layout/SplitterPanel",
+              "property": "resizable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否允许拖动调整尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Layout/SplitterPanel",
               "property": "collapsible",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否允许折叠面板",
               "configuredValue": "true"
             }
           ],
@@ -239,7 +503,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -247,7 +511,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -255,7 +543,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -295,7 +583,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

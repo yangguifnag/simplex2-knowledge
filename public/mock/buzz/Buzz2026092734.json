@@ -1,7 +1,7 @@
 {
   "title": "卡片组件（Card）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Card 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Card。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,11 +49,11 @@
           "data": [
             {
               "title": "Card/normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/card/normal.js；模型：src/frame/model/card/normal.js；适配器：src/components/card/normal/v1.0.0.vue。"
             },
             {
               "title": "Tag/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/tag/Tag.js + src/frame/defined/tag/Normal.js；模型：src/frame/model/tag/Tag.js + src/frame/model/tag/Normal.js；适配器：src/components/tag/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -94,7 +94,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -104,7 +104,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -117,48 +117,171 @@
           "data": [
             {
               "component": "Card/normal",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Card/normal",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true, loading: true, rows: 3, count: 1, rowWidth: \"100%\", throttle: 0,\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Card/normal",
+              "property": "title",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "卡片标题",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Card/normal",
+              "property": "id",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "卡片根元素的 DOM id",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Card/normal",
+              "property": "header",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "卡片头部内容",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Card/normal",
               "property": "shadow",
+              "type": "STRING",
+              "defaultValue": "\"always\"",
+              "description": "卡片阴影显示时机",
               "configuredValue": "\"always\""
             },
             {
               "component": "Card/normal",
               "property": "bodyStyle",
+              "type": "OBJECT",
+              "defaultValue": "{}",
+              "description": "卡片主体样式",
               "configuredValue": "{\"padding\":\"16px\"}"
             },
             {
               "component": "Card/normal",
+              "property": "bodyClass",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "卡片主体类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Card/normal",
               "property": "collapsible",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否允许展开收起",
               "configuredValue": "true"
             },
             {
               "component": "Card/normal",
               "property": "expanded",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "卡片是否展开",
               "configuredValue": "true"
             },
             {
               "component": "Card/normal",
               "property": "collapseTransition",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否启用展开收起动画",
               "configuredValue": "true"
             },
             {
               "component": "Card/normal",
               "property": "collapseDuration",
+              "type": "NUMBER",
+              "defaultValue": "220",
+              "description": "展开收起动画时长（毫秒）",
               "configuredValue": "220"
             },
             {
               "component": "Tag/Normal",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "标签文本",
               "configuredValue": "\"Card 作为页面容器承载组件案例内容。\""
             },
             {
               "component": "Tag/Normal",
               "property": "tagType",
+              "type": "STRING",
+              "defaultValue": "\"primary\"",
+              "description": "标签类型",
               "configuredValue": "\"info\""
             },
             {
               "component": "Tag/Normal",
+              "property": "closable",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否可关闭",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "disableTransitions",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用关闭时的动画",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "hit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示描边",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "color",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "标签背景色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "标签尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Tag/Normal",
               "property": "effect",
+              "type": "STRING",
+              "defaultValue": "\"light\"",
+              "description": "标签主题",
               "configuredValue": "\"light\""
+            },
+            {
+              "component": "Tag/Normal",
+              "property": "round",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为圆角标签",
+              "configuredValue": "未在案例中设置"
             }
           ],
           "stripe": true,
@@ -172,7 +295,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -180,7 +303,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -188,7 +335,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -228,7 +375,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

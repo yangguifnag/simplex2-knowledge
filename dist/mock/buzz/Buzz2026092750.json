@@ -1,7 +1,7 @@
 {
   "title": "单元格组件（Cell）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Cell 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Cell。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Cell/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/cell/Cell.js + src/frame/defined/cell/Normal.js；模型：src/frame/model/cell/Cell.js + src/frame/model/cell/Normal.js；适配器：src/components/cell/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -113,43 +113,91 @@
           "data": [
             {
               "component": "Cell/Normal",
+              "property": "title",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "单元格标题",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Cell/Normal",
               "property": "description",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "单元格说明",
               "configuredValue": "\"登录设备与账号保护设置。\" / \"当前不接收新的消息提醒。\""
             },
             {
               "component": "Cell/Normal",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "右侧展示值",
               "configuredValue": "\"已保护\" / \"已关闭\""
             },
             {
               "component": "Cell/Normal",
               "property": "icon",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "左侧图标组件或 Iconify 图标名称",
               "configuredValue": "\"i-ep-lock\" / \"i-ep-bell\""
             },
             {
               "component": "Cell/Normal",
+              "property": "rightIcon",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "右侧图标组件或 Iconify 图标名称",
+              "configuredValue": "\"i-ep-bell\""
+            },
+            {
+              "component": "Cell/Normal",
               "property": "showArrow",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示右侧箭头",
               "configuredValue": "true"
             },
             {
               "component": "Cell/Normal",
               "property": "clickable",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否启用点击和键盘交互",
               "configuredValue": "true"
-            },
-            {
-              "component": "Cell/Normal",
-              "property": "rightIcon",
-              "configuredValue": "\"i-ep-bell\""
             },
             {
               "component": "Cell/Normal",
               "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用交互",
               "configuredValue": "true"
             },
             {
               "component": "Cell/Normal",
+              "property": "border",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示边框",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Cell/Normal",
               "property": "align",
+              "type": "STRING",
+              "defaultValue": "\"center\"",
+              "description": "内容对齐方式",
               "configuredValue": "\"top\""
+            },
+            {
+              "component": "Cell/Normal",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "单元格尺寸",
+              "configuredValue": "未在案例中设置"
             }
           ],
           "stripe": true,
@@ -163,7 +211,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -171,7 +219,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -179,7 +251,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -219,7 +291,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

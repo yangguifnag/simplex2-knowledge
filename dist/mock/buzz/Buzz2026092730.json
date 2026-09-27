@@ -1,7 +1,7 @@
 {
   "title": "头像组件（Avatar）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Avatar 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Avatar。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Avatar/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/avatar/Avatar.js + src/frame/defined/avatar/Normal.js；模型：src/frame/model/avatar/Avatar.js + src/frame/model/avatar/Normal.js；适配器：src/components/avatar/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -114,32 +114,58 @@
             {
               "component": "Avatar/Normal",
               "property": "size",
+              "type": "ANY",
+              "defaultValue": "\"default\"",
+              "description": "头像尺寸，可使用 small/default/large 或数字像素值",
               "configuredValue": "\"large\" / 64"
             },
             {
               "component": "Avatar/Normal",
-              "property": "text",
-              "configuredValue": "\"Simplex\""
-            },
-            {
-              "component": "Avatar/Normal",
               "property": "shape",
+              "type": "STRING",
+              "defaultValue": "\"circle\"",
+              "description": "头像形状",
               "configuredValue": "\"square\""
             },
             {
               "component": "Avatar/Normal",
               "property": "src",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "头像图片地址",
               "configuredValue": "\"https://picsum.photos/id/64/128/128\""
             },
             {
               "component": "Avatar/Normal",
               "property": "alt",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "头像图片替代文本",
               "configuredValue": "\"用户头像\""
             },
             {
               "component": "Avatar/Normal",
+              "property": "srcSet",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "头像图片候选地址",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Avatar/Normal",
               "property": "fit",
+              "type": "STRING",
+              "defaultValue": "\"cover\"",
+              "description": "头像图片的填充方式",
               "configuredValue": "\"cover\""
+            },
+            {
+              "component": "Avatar/Normal",
+              "property": "text",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "图片不可用或未设置时显示的文本",
+              "configuredValue": "\"Simplex\""
             }
           ],
           "stripe": true,
@@ -153,7 +179,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -161,7 +187,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -169,7 +219,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -209,7 +259,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

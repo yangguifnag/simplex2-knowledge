@@ -1,7 +1,7 @@
 {
   "title": "表单组件（Field）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Field 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Field。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,75 +49,75 @@
           "data": [
             {
               "title": "Field/String",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/String.js；模型：src/frame/model/field/Field.js + src/frame/model/field/String.js；适配器：src/components/field/string/v1.0.0.vue。"
             },
             {
               "title": "Field/Mention",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Mention.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Mention.js；适配器：src/components/field/mention/v1.0.0.vue。"
             },
             {
               "title": "Field/Image",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Image.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Image.js；适配器：src/components/field/image/v1.0.0.vue。"
             },
             {
               "title": "Field/Date",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Date.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Date.js；适配器：src/components/field/date/v1.0.0.vue。"
             },
             {
               "title": "Field/DateRange",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/DateRange.js；模型：src/frame/model/field/Field.js + src/frame/model/field/DateRange.js；适配器：src/components/field/daterange/v1.0.0.vue。"
             },
             {
               "title": "Field/Money",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Money.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Money.js；适配器：src/components/field/money/v1.0.0.vue。"
             },
             {
               "title": "Field/Number",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Number.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Number.js；适配器：src/components/field/number/v1.0.0.vue。"
             },
             {
               "title": "Field/Phone",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Phone.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Phone.js；适配器：src/components/field/phone/v1.0.0.vue。"
             },
             {
               "title": "Field/Select",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Select.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Select.js；适配器：src/components/field/select/v1.0.0.vue。"
             },
             {
               "title": "Field/TreeSelect",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/TreeSelect.js；模型：src/frame/model/field/Field.js + src/frame/model/field/TreeSelect.js；适配器：src/components/field/treeselect/v1.0.0.vue。"
             },
             {
               "title": "Field/Transfer",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Transfer.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Transfer.js；适配器：src/components/field/transfer/v1.0.0.vue。"
             },
             {
               "title": "Field/Radio",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Radio.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Radio.js；适配器：src/components/field/radio/v1.0.0.vue。"
             },
             {
               "title": "Field/Checkbox",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Checkbox.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Checkbox.js；适配器：src/components/field/checkbox/v1.0.0.vue。"
             },
             {
               "title": "Field/Switch",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Switch.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Switch.js；适配器：src/components/field/switch/v1.0.0.vue。"
             },
             {
               "title": "Field/Slider",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/Slider.js；模型：src/frame/model/field/Field.js + src/frame/model/field/Slider.js；适配器：src/components/field/slider/v1.0.0.vue。"
             },
             {
               "title": "Field/InputTag",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/InputTag.js；模型：src/frame/model/field/Field.js + src/frame/model/field/InputTag.js；适配器：src/components/field/inputtag/v1.0.0.vue。"
             },
             {
               "title": "Field/InputOtp",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/InputOtp.js；模型：src/frame/model/field/Field.js + src/frame/model/field/InputOtp.js；适配器：src/components/field/inputotp/v1.0.0.vue。"
             },
             {
               "title": "Field/ColorPicker",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/field/Field.js + src/frame/defined/field/ColorPicker.js；模型：src/frame/model/field/Field.js + src/frame/model/field/ColorPicker.js；适配器：src/components/field/colorpicker/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -158,7 +158,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -168,7 +168,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -181,428 +181,3939 @@
           "data": [
             {
               "component": "Field/String",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"名称\""
             },
             {
               "component": "Field/String",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"测试文本\""
             },
             {
               "component": "Field/String",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "255",
+              "description": "最大输入长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "最小输入长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/String",
               "property": "loading",
+              "type": "未声明",
+              "defaultValue": "\"未声明\"",
+              "description": "该字段未在对应 defined 文件中声明，需结合模型和适配器源码确认。",
               "configuredValue": "true"
             },
             {
               "component": "Field/Mention",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"消息内容\""
             },
             {
               "component": "Field/Mention",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"请联系 @\""
             },
             {
               "component": "Field/Mention",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "200"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数统计",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
               "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
               "configuredValue": "\"输入 @ 提及成员\""
             },
             {
               "component": "Field/Mention",
               "property": "options",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "Mention 候选项列表",
               "configuredValue": "[{\"label\":\"张三\",\"value\":\"张三\"},{\"label\":\"李四\",\"value\":\"李四\"},{\"label\":\"王五\",\"value\":\"王五\",\"disabled\":true}]"
             },
             {
               "component": "Field/Mention",
               "property": "prefix",
+              "type": "ANY",
+              "defaultValue": "\"@\"",
+              "description": "触发候选项的前缀字符",
               "configuredValue": "\"@\""
             },
             {
               "component": "Field/Mention",
               "property": "split",
+              "type": "STRING",
+              "defaultValue": "\" \"",
+              "description": "Mention 内容的分隔字符",
               "configuredValue": "\" \""
             },
             {
               "component": "Field/Mention",
+              "property": "whole",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "删除时是否将 Mention 内容整体删除",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "placement",
+              "type": "STRING",
+              "defaultValue": "\"bottom\"",
+              "description": "候选面板位置：top 或 bottom",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "showArrow",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示候选面板箭头",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "offset",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "候选面板偏移量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "loading",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "候选面板是否显示加载状态",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
+              "property": "optionProps",
+              "type": "OBJECT",
+              "defaultValue": "{\n        label: \"label\",\n        value: \"value\",\n        disabled: \"disabled\",\n    }",
+              "description": "候选项文本、值和禁用字段映射",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Mention",
               "property": "mentionType",
+              "type": "STRING",
+              "defaultValue": "\"textarea\"",
+              "description": "输入类型：text 或 textarea",
               "configuredValue": "\"textarea\""
             },
             {
               "component": "Field/Mention",
               "property": "rows",
+              "type": "NUMBER",
+              "defaultValue": "2",
+              "description": "多行输入框行数",
               "configuredValue": "3"
             },
             {
               "component": "Field/Mention",
-              "property": "maxlength",
-              "configuredValue": "200"
+              "property": "resize",
+              "type": "STRING",
+              "defaultValue": "\"none\"",
+              "description": "多行输入框缩放方式",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Mention",
-              "property": "clearable",
-              "configuredValue": "true"
+              "property": "autosize",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "多行输入框是否自适应高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Image",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"预览图片\""
             },
             {
               "component": "Field/Image",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"https://picsum.photos/id/1015/640/360\""
             },
             {
               "component": "Field/Image",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
               "property": "width",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "图片显示宽度",
               "configuredValue": "\"320px\""
             },
             {
               "component": "Field/Image",
               "property": "height",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "图片显示高度",
               "configuredValue": "\"180px\""
             },
             {
               "component": "Field/Image",
               "property": "fit",
+              "type": "STRING",
+              "defaultValue": "\"cover\"",
+              "description": "图片填充方式",
               "configuredValue": "\"cover\""
             },
             {
               "component": "Field/Image",
+              "property": "lazy",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否启用懒加载",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "loading",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "图片加载策略：eager 或 lazy",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
               "property": "previewSrcList",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "图片预览列表，为空时不启用预览",
               "configuredValue": "[\"https://picsum.photos/id/1015/1280/720\"]"
+            },
+            {
+              "component": "Field/Image",
+              "property": "previewTeleported",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否将图片预览挂载到 body",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Image",
+              "property": "hideOnClickModal",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "点击预览遮罩时是否关闭预览",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Date",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"日期\""
             },
             {
               "component": "Field/Date",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"2026-09-24\""
+            },
+            {
+              "component": "Field/Date",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "format",
+              "type": "STRING",
+              "defaultValue": "\"YYYY-MM-DD\"",
+              "description": "显示格式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Date",
+              "property": "valueFormat",
+              "type": "STRING",
+              "defaultValue": "\"YYYY-MM-DD\"",
+              "description": "提交值格式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/DateRange",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"日期范围\""
             },
             {
               "component": "Field/DateRange",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "[\"2026-09-01\",\"2026-09-24\"]"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "startPlaceholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "endPlaceholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "format",
+              "type": "STRING",
+              "defaultValue": "\"YYYY-MM-DD\"",
+              "description": "显示格式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/DateRange",
+              "property": "valueFormat",
+              "type": "STRING",
+              "defaultValue": "\"YYYY-MM-DD\"",
+              "description": "提交值格式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Money",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"金额\""
             },
             {
               "component": "Field/Money",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "199.99"
             },
             {
               "component": "Field/Money",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "min",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "最小金额",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "max",
+              "type": "NUMBER",
+              "defaultValue": "999999999",
+              "description": "最大金额",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
+              "property": "precision",
+              "type": "NUMBER",
+              "defaultValue": "2",
+              "description": "金额精度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Money",
               "property": "currency",
+              "type": "STRING",
+              "defaultValue": "\"CNY\"",
+              "description": "币种",
               "configuredValue": "\"CNY\""
             },
             {
               "component": "Field/Number",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"数量\""
             },
             {
               "component": "Field/Number",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "10"
             },
             {
               "component": "Field/Number",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
               "property": "min",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "最小值",
               "configuredValue": "0"
             },
             {
               "component": "Field/Number",
               "property": "max",
+              "type": "NUMBER",
+              "defaultValue": "999999999",
+              "description": "最大值",
               "configuredValue": "100"
+            },
+            {
+              "component": "Field/Number",
+              "property": "step",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "步进值",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Number",
+              "property": "precision",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "小数精度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Phone",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"手机号\""
             },
             {
               "component": "Field/Phone",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"13800138000\""
+            },
+            {
+              "component": "Field/Phone",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "11",
+              "description": "最大输入长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Phone",
+              "property": "countryCode",
+              "type": "STRING",
+              "defaultValue": "\"+86\"",
+              "description": "国家区号",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Select",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"状态\""
             },
             {
               "component": "Field/Select",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"enabled\""
             },
             {
               "component": "Field/Select",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
               "property": "options",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "选项列表",
               "configuredValue": "[{\"label\":\"启用\",\"value\":\"enabled\"},{\"label\":\"停用\",\"value\":\"disabled\"}]"
+            },
+            {
+              "component": "Field/Select",
+              "property": "keyName",
+              "type": "STRING",
+              "defaultValue": "\"code\"",
+              "description": "选项键名字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "valueName",
+              "type": "STRING",
+              "defaultValue": "\"value\"",
+              "description": "选项值字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "code",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "当前选中的编码值",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "codeType",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "编码值类型",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Select",
+              "property": "showValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "展示文本",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/TreeSelect",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"组织部门\""
             },
             {
               "component": "Field/TreeSelect",
               "property": "value",
+              "type": "ANY",
+              "defaultValue": "''",
+              "description": "当前选中的节点值，multiple 模式下可为数组",
               "configuredValue": "\"engineering\""
             },
             {
               "component": "Field/TreeSelect",
-              "property": "data",
-              "configuredValue": "[{\"value\":\"company\",\"label\":\"公司\",\"children\":[{\"value\":\"engineering\",\"label\":\"研发中心\",\"children\":[{\"value\":\"frontend\",\"label\":\"前端组\"},{\"value\":\"backend\",\"label\":\"后端组\"}]},{\"value\":\"design\",\"label\":\"设计中心\"}]}]"
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/TreeSelect",
-              "property": "filterable",
-              "configuredValue": "true"
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/TreeSelect",
               "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可清空",
               "configuredValue": "true"
             },
             {
               "component": "Field/TreeSelect",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "data",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "树形选项数据",
+              "configuredValue": "[{\"value\":\"company\",\"label\":\"公司\",\"children\":[{\"value\":\"engineering\",\"label\":\"研发中心\",\"children\":[{\"value\":\"frontend\",\"label\":\"前端组\"},{\"value\":\"backend\",\"label\":\"后端组\"}]},{\"value\":\"design\",\"label\":\"设计中心\"}]}]"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "nodeKey",
+              "type": "STRING",
+              "defaultValue": "\"value\"",
+              "description": "树节点唯一标识字段",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "props",
+              "type": "OBJECT",
+              "defaultValue": "{\n        value: \"value\",\n        label: \"label\",\n        children: \"children\",\n        disabled: \"disabled\",\n    }",
+              "description": "树节点字段映射",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "multiple",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否允许多选",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "showCheckbox",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示节点复选框",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "checkStrictly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否严格遵循父子节点不互相关联",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
               "property": "defaultExpandAll",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否默认展开所有节点",
               "configuredValue": "true"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "expandOnClickNode",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "点击节点时是否展开或收起节点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "checkOnClickNode",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "点击节点时是否选中节点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "lazy",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否懒加载子节点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "accordion",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否每次只展开一个同级树节点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "indent",
+              "type": "NUMBER",
+              "defaultValue": "18",
+              "description": "树节点间的缩进",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "filterable",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否可搜索",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "collapseTags",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "多选时是否折叠标签",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "teleported",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "下拉面板是否挂载到 body",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "选择器尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "emptyText",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "无匹配数据时显示的文本",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/TreeSelect",
+              "property": "renderAfterExpand",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否在展开后才渲染子节点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Transfer",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"成员分配\""
             },
             {
               "component": "Field/Transfer",
               "property": "value",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "目标列表中选中项的 key 列表",
               "configuredValue": "[\"user-2\"]"
             },
             {
               "component": "Field/Transfer",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
               "property": "data",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "穿梭框数据源",
               "configuredValue": "[{\"key\":\"user-1\",\"label\":\"张三\"},{\"key\":\"user-2\",\"label\":\"李四\"},{\"key\":\"user-3\",\"label\":\"王五\",\"disabled\":true},{\"key\":\"user-4\",\"label\":\"赵六\"}]"
             },
             {
               "component": "Field/Transfer",
               "property": "titles",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "左右列表标题",
               "configuredValue": "[\"全部成员\",\"已分配成员\"]"
             },
             {
               "component": "Field/Transfer",
               "property": "buttonTexts",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "左右移动按钮文本",
               "configuredValue": "[\"分配\",\"移除\"]"
             },
             {
               "component": "Field/Transfer",
               "property": "filterable",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否可搜索",
               "configuredValue": "true"
             },
             {
               "component": "Field/Transfer",
               "property": "filterPlaceholder",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "搜索输入框提示文本",
               "configuredValue": "\"输入姓名搜索\""
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "leftDefaultChecked",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "左侧列表默认勾选项 key",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "rightDefaultChecked",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "右侧列表默认勾选项 key",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "format",
+              "type": "OBJECT",
+              "defaultValue": "{}",
+              "description": "左右列表勾选状态文案",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "transferProps",
+              "type": "OBJECT",
+              "defaultValue": "{\n        label: \"label\",\n        key: \"key\",\n        disabled: \"disabled\",\n    }",
+              "description": "数据项标签、key 和禁用字段映射",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "targetOrder",
+              "type": "STRING",
+              "defaultValue": "\"original\"",
+              "description": "目标列表排序：original、push 或 unshift",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Transfer",
+              "property": "validateEvent",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "值变化时是否触发表单校验",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Radio",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"性别\" / \"优先级\""
             },
             {
               "component": "Field/Radio",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"female\" / \"normal\""
             },
             {
               "component": "Field/Radio",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
               "property": "options",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "单选项列表",
               "configuredValue": "[{\"label\":\"女\",\"value\":\"female\"},{\"label\":\"男\",\"value\":\"male\"},{\"label\":\"其他\",\"value\":\"other\",\"disabled\":true}] / [{\"label\":\"低\",\"value\":\"low\"},{\"label\":\"普通\",\"value\":\"normal\"},{\"label\":\"高\",\"value\":\"high\"}]"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "optionLabel",
+              "type": "STRING",
+              "defaultValue": "\"label\"",
+              "description": "选项显示文本字段名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "optionValue",
+              "type": "STRING",
+              "defaultValue": "\"value\"",
+              "description": "选项值字段名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "optionDisabled",
+              "type": "STRING",
+              "defaultValue": "\"disabled\"",
+              "description": "选项禁用字段名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "button",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否使用按钮样式",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "border",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示边框",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "单选项尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "fill",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "按钮激活时的填充色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Radio",
+              "property": "textColor",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "按钮激活时的文字颜色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Checkbox",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"关注领域\" / \"接收通知\""
             },
             {
               "component": "Field/Checkbox",
               "property": "value",
+              "type": "ANY",
+              "defaultValue": "[]",
+              "description": "勾选值：选项组为选中值数组，独立复选框为布尔值或 trueValue/falseValue",
               "configuredValue": "[\"design\",\"frontend\"] / true"
             },
             {
               "component": "Field/Checkbox",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
               "property": "options",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "复选框选项列表；为空时渲染独立复选框",
               "configuredValue": "[{\"label\":\"设计\",\"value\":\"design\"},{\"label\":\"前端开发\",\"value\":\"frontend\"},{\"label\":\"后端开发\",\"value\":\"backend\"},{\"label\":\"测试\",\"value\":\"testing\",\"disabled\":true}]"
             },
             {
               "component": "Field/Checkbox",
+              "property": "optionLabel",
+              "type": "STRING",
+              "defaultValue": "\"label\"",
+              "description": "选项显示文本字段名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "optionValue",
+              "type": "STRING",
+              "defaultValue": "\"value\"",
+              "description": "选项值字段名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "optionDisabled",
+              "type": "STRING",
+              "defaultValue": "\"disabled\"",
+              "description": "选项禁用字段名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "checkboxLabel",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "独立复选框显示文本",
+              "configuredValue": "\"订阅产品更新\""
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "trueValue",
+              "type": "ANY",
+              "defaultValue": "true",
+              "description": "独立复选框选中时的值",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "falseValue",
+              "type": "ANY",
+              "defaultValue": "false",
+              "description": "独立复选框未选中时的值",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "indeterminate",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "独立复选框是否显示半选状态",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "border",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示边框",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "button",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "选项组是否使用按钮样式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
               "property": "min",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "选项组最少选中数量",
               "configuredValue": "1"
             },
             {
               "component": "Field/Checkbox",
               "property": "max",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "选项组最多选中数量，0 表示不限制",
               "configuredValue": "3"
             },
             {
               "component": "Field/Checkbox",
-              "property": "checkboxLabel",
-              "configuredValue": "\"订阅产品更新\""
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "复选框尺寸",
+              "configuredValue": "未在案例中设置"
             },
             {
-              "component": "Field/Radio",
-              "property": "button",
-              "configuredValue": "true"
+              "component": "Field/Checkbox",
+              "property": "fill",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "按钮样式激活时的填充色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Checkbox",
+              "property": "textColor",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "按钮样式激活时的文字颜色",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Switch",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"是否启用\""
             },
             {
               "component": "Field/Switch",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
+              "configuredValue": "true"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "loading",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示加载状态",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "inlinePrompt",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否在开关内显示文字",
               "configuredValue": "true"
             },
             {
               "component": "Field/Switch",
               "property": "activeText",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "打开时显示的文字",
               "configuredValue": "\"是\""
             },
             {
               "component": "Field/Switch",
               "property": "inactiveText",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "关闭时显示的文字",
               "configuredValue": "\"否\""
             },
             {
               "component": "Field/Switch",
-              "property": "inlinePrompt",
-              "configuredValue": "true"
+              "property": "activeValue",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "打开时的值",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Switch",
+              "property": "inactiveValue",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "关闭时的值",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/Slider",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"进度\""
             },
             {
               "component": "Field/Slider",
               "property": "value",
+              "type": "NUMBER",
+              "defaultValue": "50",
+              "description": "当前值",
               "configuredValue": "50"
             },
             {
               "component": "Field/Slider",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
               "property": "min",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "最小值",
               "configuredValue": "0"
             },
             {
               "component": "Field/Slider",
               "property": "max",
+              "type": "NUMBER",
+              "defaultValue": "100",
+              "description": "最大值",
               "configuredValue": "100"
             },
             {
               "component": "Field/Slider",
               "property": "step",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "步进值",
               "configuredValue": "10"
             },
             {
               "component": "Field/Slider",
               "property": "showInput",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示输入框",
               "configuredValue": "true"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "showInputControls",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示输入框控制按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "showStops",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示间断点",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "showTooltip",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "range",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为范围选择",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "vertical",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否垂直显示",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/Slider",
+              "property": "height",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "垂直模式高度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/InputTag",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "字段名称",
               "configuredValue": "\"标签\""
             },
             {
               "component": "Field/InputTag",
               "property": "value",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "标签值",
               "configuredValue": "[\"Vue\",\"Element Plus\"]"
             },
             {
               "component": "Field/InputTag",
-              "property": "max",
-              "configuredValue": "5"
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "255",
+              "description": "单个标签最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "单个标签最小长度",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/InputTag",
               "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否可清空",
               "configuredValue": "true"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "max",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "最大标签数量",
+              "configuredValue": "5"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "draggable",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否允许拖拽标签",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputTag",
+              "property": "trigger",
+              "type": "STRING",
+              "defaultValue": "\"Enter\"",
+              "description": "创建标签的触发方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/InputOtp",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"验证码\" / \"安全码\""
             },
             {
               "component": "Field/InputOtp",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"1234\" / \"563821\""
             },
             {
               "component": "Field/InputOtp",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "field 是否可清空",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
               "property": "length",
+              "type": "NUMBER",
+              "defaultValue": "6",
+              "description": "验证码输入框数量",
               "configuredValue": "4 / 6"
             },
             {
               "component": "Field/InputOtp",
-              "property": "inputmode",
-              "configuredValue": "\"numeric\""
-            },
-            {
-              "component": "Field/InputOtp",
               "property": "otpType",
+              "type": "STRING",
+              "defaultValue": "\"outlined\"",
+              "description": "验证码输入框样式",
               "configuredValue": "\"filled\""
             },
             {
               "component": "Field/InputOtp",
+              "property": "inputmode",
+              "type": "STRING",
+              "defaultValue": "\"numeric\"",
+              "description": "虚拟键盘输入模式",
+              "configuredValue": "\"numeric\""
+            },
+            {
+              "component": "Field/InputOtp",
               "property": "mask",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否隐藏输入内容",
               "configuredValue": "true"
             },
             {
               "component": "Field/InputOtp",
               "property": "separator",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "输入框之间的分隔符",
               "configuredValue": "\"-\""
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "validateEvent",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "值变化时是否触发表单校验",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/InputOtp",
+              "property": "ariaLabel",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "验证码输入框的无障碍标签",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "skeleton",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启 Skeleton",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "@skeleton",
+              "type": "OBJECT",
+              "defaultValue": "{\n        animated: true,\n        loading: true,\n        rows: 1,\n        count: 1,\n        rowWidth: \"100%\",\n        throttle: 0,\n        kind: \"field\",\n    }",
+              "description": "Skeleton 配置",
+              "configuredValue": "未在案例中设置"
             },
             {
               "component": "Field/ColorPicker",
               "property": "label",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 label",
               "configuredValue": "\"主题颜色\""
             },
             {
               "component": "Field/ColorPicker",
               "property": "value",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 value",
               "configuredValue": "\"#409EFF\""
             },
             {
               "component": "Field/ColorPicker",
+              "property": "oldValue",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "field 的 oldValue",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "maxlength",
+              "type": "NUMBER",
+              "defaultValue": "999",
+              "description": "field 的最大长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "minlength",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "field 的最小长度",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "clearable",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示清空按钮",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "readonly",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否只读",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "autofocus",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否自动聚焦",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "autocomplete",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否开启自动补全",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "showWordLimit",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示字数限制",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "labelPosition",
+              "type": "STRING",
+              "defaultValue": "\"left\"",
+              "description": "label 的位置",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "required",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否必填",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "showMessage",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "是否显示校验错误信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "rules",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "校验规则",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "errorMessage",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "错误提示信息",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "layout",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "布局方式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "placeholder",
+              "type": "COMPUTED",
+              "defaultValue": "计算属性",
+              "description": "模型计算属性，由其他属性动态推导。",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
               "property": "showAlpha",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否显示透明度选择",
               "configuredValue": "true"
             },
             {
               "component": "Field/ColorPicker",
               "property": "colorFormat",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "颜色值格式",
               "configuredValue": "\"hex8\""
             },
             {
               "component": "Field/ColorPicker",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "\"default\"",
+              "description": "颜色选择器尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "popperClass",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "颜色面板类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "popperStyle",
+              "type": "OBJECT",
+              "defaultValue": "{}",
+              "description": "颜色面板样式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
               "property": "predefine",
+              "type": "ARRAY",
+              "defaultValue": "[]",
+              "description": "预定义颜色列表",
               "configuredValue": "[\"#409EFF\",\"#67C23A\",\"#E6A23C\",\"#F56C6C\",\"#909399\"]"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "teleported",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "颜色面板是否使用 teleport",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "persistent",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "颜色面板是否持久化挂载",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "validateEvent",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "值变化时是否触发表单校验",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Field/ColorPicker",
+              "property": "ariaLabel",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "颜色选择器的无障碍标签",
+              "configuredValue": "未在案例中设置"
             }
           ],
           "stripe": true,
@@ -616,7 +4127,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -624,7 +4135,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -632,7 +4167,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -672,7 +4207,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

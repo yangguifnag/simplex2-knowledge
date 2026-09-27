@@ -1,7 +1,7 @@
 {
   "title": "分页组件（Pagination）",
   "eyebrow": "SIMPLEX FRAMEWORK / KNOWLEDGE BASE",
-  "intro": "本页仅维护已迁移的 Buzz 配置：展示 Pagination 的实际案例、案例中出现的配置字段，以及可复用的页面 JSON 片段。",
+  "intro": "本页按项目现有定义、模型和 Vue 适配器说明 Pagination。配置代码取自原组件集成案例，下面的展示区保留了该组件的实际案例配置。",
   "type": "Knowledge",
   "kind": "Article",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "01 · 案例组件范围",
+      "title": "01 · 组件定义与源码",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -49,7 +49,7 @@
           "data": [
             {
               "title": "Pagination/Normal",
-              "description": "该组件的实际示例配置已从组件集成 Buzz 页面迁移到当前知识库。"
+              "description": "定义：src/frame/defined/pagination/Pagination.js + src/frame/defined/pagination/Normal.js；模型：src/frame/model/pagination/Pagination.js + src/frame/model/pagination/Normal.js；适配器：src/components/pagination/normal/v1.0.0.vue。"
             }
           ],
           "stripe": true,
@@ -90,7 +90,7 @@
       "type": "Card",
       "kind": "normal",
       "version": "1.0.0",
-      "title": "02 · 案例配置字段",
+      "title": "02 · 配置字段参考",
       "shadow": "hover",
       "collapsible": false,
       "collapseTransition": false,
@@ -100,7 +100,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "字段和值直接从当前迁移的 Buzz 案例中汇总；本知识库不复制组件定义、模型或 Vue 实现。",
+          "description": "字段类型、默认值和解析说明从项目 defined 源码提取；案例配置值列对应当前示例。未声明字段请结合模型与适配器确认。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,
@@ -113,33 +113,147 @@
           "data": [
             {
               "component": "Pagination/Normal",
-              "property": "currentPage",
-              "configuredValue": "3"
-            },
-            {
-              "component": "Pagination/Normal",
               "property": "pageSize",
+              "type": "NUMBER",
+              "defaultValue": "10",
+              "description": "每页显示条目数",
               "configuredValue": "10"
             },
             {
               "component": "Pagination/Normal",
               "property": "total",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "数据总条目数",
               "configuredValue": "85"
             },
             {
               "component": "Pagination/Normal",
+              "property": "pageCount",
+              "type": "NUMBER",
+              "defaultValue": "0",
+              "description": "总页数，设置后优先于 total",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "currentPage",
+              "type": "NUMBER",
+              "defaultValue": "1",
+              "description": "当前页码",
+              "configuredValue": "3"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "pagerCount",
+              "type": "NUMBER",
+              "defaultValue": "7",
+              "description": "按钮组中页码按钮的数量",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
               "property": "layout",
+              "type": "STRING",
+              "defaultValue": "\"prev, pager, next, jumper, ->, total, sizes\"",
+              "description": "分页组件布局",
               "configuredValue": "\"total, sizes, prev, pager, next, jumper\""
             },
             {
               "component": "Pagination/Normal",
               "property": "pageSizes",
+              "type": "ARRAY",
+              "defaultValue": "[10,20,30,40,50,100]",
+              "description": "每页显示条目数选项",
               "configuredValue": "[10,20,50,100]"
             },
             {
               "component": "Pagination/Normal",
+              "property": "popperClass",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "下拉菜单的类名",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "popperStyle",
+              "type": "OBJECT",
+              "defaultValue": "{}",
+              "description": "下拉菜单的样式",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "prevText",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "上一页按钮文本",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "nextText",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "下一页按钮文本",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "teleported",
+              "type": "BOOLEAN",
+              "defaultValue": "true",
+              "description": "下拉菜单是否使用 teleport",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "small",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否使用小型分页",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "size",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "分页组件尺寸",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
               "property": "background",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否为分页按钮添加背景色",
               "configuredValue": "true"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "disabled",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "是否禁用分页",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "hideOnSinglePage",
+              "type": "BOOLEAN",
+              "defaultValue": "false",
+              "description": "只有一页时是否隐藏分页",
+              "configuredValue": "未在案例中设置"
+            },
+            {
+              "component": "Pagination/Normal",
+              "property": "appendSizeTo",
+              "type": "STRING",
+              "defaultValue": "''",
+              "description": "每页条数下拉框追加到的元素",
+              "configuredValue": "未在案例中设置"
             }
           ],
           "stripe": true,
@@ -153,7 +267,7 @@
               "version": "1.0.0",
               "label": "组件",
               "prop": "component",
-              "minWidth": "150"
+              "minWidth": "130"
             },
             {
               "type": "Column",
@@ -161,7 +275,31 @@
               "version": "1.0.0",
               "label": "字段",
               "prop": "property",
+              "minWidth": "120"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段类型",
+              "prop": "type",
+              "minWidth": "110"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "默认值",
+              "prop": "defaultValue",
               "minWidth": "150"
+            },
+            {
+              "type": "Column",
+              "kind": "Normal",
+              "version": "1.0.0",
+              "label": "字段解析",
+              "prop": "description",
+              "minWidth": "220"
             },
             {
               "type": "Column",
@@ -169,7 +307,7 @@
               "version": "1.0.0",
               "label": "案例配置值",
               "prop": "configuredValue",
-              "minWidth": "280"
+              "minWidth": "150"
             }
           ]
         }
@@ -209,7 +347,7 @@
           "type": "Alert",
           "kind": "Normal",
           "version": "1.0.0",
-          "description": "案例直接复用迁移后的组件集成 Buzz 配置。",
+          "description": "案例直接复用原组件集成演示页中的配置。",
           "alertType": "info",
           "closable": false,
           "showIcon": true,

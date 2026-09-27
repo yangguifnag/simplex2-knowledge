@@ -306,7 +306,7 @@
               "type": "Tag",
               "kind": "Normal",
               "version": "1.0.0",
-              "label": "src/renderer/rendererBase.vue，以及实际容器适配器的 slot。",
+              "label": "src/renderer/RendererBase.vue，以及实际容器适配器的 slot。",
               "tagType": "info",
               "effect": "light"
             }

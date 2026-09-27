@@ -256,7 +256,7 @@
               "type": "Tag",
               "kind": "Normal",
               "version": "1.0.0",
-              "label": "src/renderer/rendererBase.vue 根据 component-name 递归呈现模型树和插槽。",
+              "label": "src/renderer/RendererBase.vue 根据 component-name 递归呈现模型树和插槽。",
               "tagType": "info",
               "effect": "light"
             }
